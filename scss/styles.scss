@@ -1,0 +1,1096 @@
+/*ORDEN DE PAGINAS
+1-INDEX
+2-MENU
+3-SUSHI
+4-PIZZA
+5-CARNES
+6-INCIAR SESION
+7-SOBRE NOSTROS*/
+
+
+/*-----FUENTES------*/
+@font-face {
+    font-family: "SPECTRALSC-REGULAR";
+    src: url(../fuentes/SpectralSC-Regular.ttf);
+  }
+  @font-face{
+    font-family: "URBANIST";
+    src: url(../fuentes/Urbanist-VariableFont_wght.ttf);
+  }
+  @font-face{
+    font-family: "REDRESSED";
+    src: url(../fuentes/Redressed-Regular.ttf);
+  }
+  @font-face{
+    font-family: "SPECTRALSC";
+    src: url(../fuentes/SpectralSC-ExtraLight.ttf);
+  }
+  @font-face{
+    font-family: "VIDALOKA";
+    src: url(../fuentes/Vidaloka-Regular.ttf);
+  }
+  @font-face{
+    font-family: "KANIT";
+    src: url(../fuentes/Kanit-Thin.ttf);
+  }
+
+  /*------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*-----MENU DE NAVEGACION-------*/
+
+nav{
+    display: flex;
+    background-color: #000000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    & :hover{
+      color: orange;
+    }
+    a{
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      h2{
+        color: #e4e4e4ce;
+        margin-left: 5%;
+        font-family: "URBANIST";
+        font-size: 300%;
+        opacity: 80%;
+      }
+      img{
+        width: 15%;
+        margin-right: 2%;
+      }
+    }
+    nav{
+      display: flex;
+      a{
+        text-decoration: none;
+        color: #e4e4e4ce;
+        font-size: 20px;
+        opacity: 80%;
+      }
+    }
+  }  
+  @media  (max-width: 700px){
+    .header{
+      flex-direction: column;
+    }
+    .nav{
+      padding: 10px 0px;
+    }
+    .logo-nombre{
+      font-size: 100%;
+    }
+    .nav a{
+      font-size: 80%;
+    }
+  }
+
+
+/*--------footer--------*/
+
+footer {
+  background-color: rgba(0, 0, 0, 0.247); 
+  padding: 10px;  
+  .arrowupcircle{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    width: 50px;
+  }
+  p{
+    text-align: center;
+    padding-top: 2%;
+    font-weight: bold;
+  }
+  .footer1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .footer2{
+      color: #535353; 
+      transition: color 0.3s;
+      margin-left: 10%;
+      & :hover {
+        color: orange; 
+        cursor: pointer;
+      }
+      a{
+        padding-right: 50px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      
+    }
+    .footer3{
+      margin-left: 30%;
+      a{
+        margin-right: 20px;         
+      }
+      img{
+        width: 40px;
+        }
+      }
+    }    
+  }
+
+/*-----------PAGINA 1----------- */
+/*IMAGEN PRINCIPAL*/
+.wrap{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgb(0 0 0/ 1),rgb(0 0 0/ .25)),url(../imagenes/fotoprincipal.jpg);
+  background-size: cover;
+  background-position: center;
+  .wrap-texto{
+    color: #c7c7c7;
+    text-align: center;
+    .textoimg{
+      font-size: 150%;
+    }
+    .taberu{
+      font-size: 500%;
+      color: #c7c7c7;
+    }
+  }
+}
+
+/*-----MAIN----*/
+section {
+  display: flex;
+  background-color: #ffffff;  
+  padding: 3%;
+
+    .imgrayador {
+    margin: 5%;
+    width: 50%;
+    flex: 50%;
+    }
+    article {
+      background-color: #e2e2e2; 
+      justify-content: center;
+      text-align: center;
+      border: 3px solid black;
+      margin: auto;
+      padding: 5%;
+      flex: 50%;
+      margin-left: 5%; 
+      margin-right: 5%;
+      h1{
+        font-size: 150%;
+        font-weight: bold;
+        color: rgb(71, 71, 71);      
+      }
+      p{
+        font-size: 100%;
+        color: #858585;
+        font-weight: bold;
+      }
+      }   
+}
+
+    .flex-container2pg1 {
+      display: flex;
+      text-align: center;
+      margin-bottom: 2%;      
+      .flexpg1-item-left {
+        padding: 3%;
+        flex: 40%;
+        width: 60vw;
+        height: 100vh;
+      }
+      .flexpg1-item-right {
+        padding: 3%;
+        flex: 40%;   
+        width: 60VW;   
+        height: 100vh;
+      }
+    }
+    
+    
+    
+    @media (max-width: 700px) {
+      .flex-container1pg1 {
+        flex-direction: column;
+      }
+      .flex-container1pg1 > section p{
+        font-size: 50%;
+      }
+      .flex-container1pg1 > .section1p1 h1{
+        font-size: 100%;
+      }
+      .flex-container2pg1 {
+        flex-direction: column;
+      }
+      .flexpg1-item-left {
+      width: 100%;
+      }
+      
+      .flexpg1-item-right {
+      width: 100%;
+    }
+  }
+  
+
+/*---------PAGINA 2----------*/
+
+
+.rowpagina2{
+  display: flex;  
+  color: #c7c7c7;
+  .buttonpg2{
+    background-color: none;
+    color: rgb(161, 161, 161);
+    border: 2px solid #e7e7e7;
+    padding: 2%;
+    border-radius: 10px;
+  }   
+  
+  .column1pagina2{
+    flex: 33%;
+    background-image: url(../imagenes/fotosushipagina2.jpg);
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0.5%;   
+    text-align: center; 
+    padding-top: 10%;
+    h1{
+      font-size: 400%;
+      font-family: "SPECTRALSC-REGULAR";
+    }
+  }
+    
+  .column2pagina2{
+    flex: 33%;
+    background-image: url(../imagenes/fotopizzapagina2.jpg);
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0.5%; 
+    text-align: center; 
+    padding-top: 10%; 
+    h1{
+      font-size: 400%;
+      font-family: "SPECTRALSC-REGULAR";
+    }     
+    
+  }
+  .column3pagina2{
+    flex: 33%;
+    background-image: url(../imagenes/fotocarnepagina2.jpg);
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    margin: 0.5%; 
+    text-align: center; 
+    padding-top: 10%;  
+    h1{
+      font-size: 400%;
+      font-family: "SPECTRALSC-REGULAR";
+    }   
+  }
+}
+
+@media (max-width: 700px){
+  .rowpagina2{
+    flex-wrap: wrap;
+  }
+  .column1pagina2{
+    flex: 100%;
+  }
+  .column2pagina2{
+    flex: 100%;
+  }
+  .column3pagina2{
+    flex: 100%;
+  }
+}
+
+
+/*-----------PAGINA3---------*/
+
+  /*-----MENU PRINCIPAL SUSHI------*/
+  .fotoprincipalsushipg3{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      .imagen {
+          width: 100%;
+          height: auto;
+      }
+  }
+}
+  .flex-informacionsushipg3{
+
+    display: flex;
+    align-items: center;
+
+    .textosushipg3{
+      padding: 50px;
+      align-items: center;
+      text-align: center;
+      flex: 50%;
+
+      h1{      
+      padding: 10px;
+      font-size: 10vw;
+      }
+      p {      
+      padding: 10px;
+      font-size: 1.3vw;
+      }
+    }
+    .fotoprincipal2sushipg3{
+      flex: 50%;
+      padding: 10px;
+      
+      img{
+        width: 50vw;
+        border-radius: 5%;
+      }
+    } 
+    @media (max-width: 700px){
+      .flex-informacionsushipg3{
+      flex-wrap: wrap;
+      }
+      .textosushipg3{
+        flex: 100%;
+        margin-bottom: 3%;
+      }
+      .textosushipg3 > h1{
+      font-size: 50vw;
+      }
+      .textosushipg3 > p{
+      font-size: 10vw;
+      }
+      
+      .fotoprincipal2sushipg3{
+        flex: 100%;
+      }
+      }
+  }
+  
+
+hr {
+  width: 80%;
+  height: 7px;
+  background-color: black;
+  margin: 20px auto; 
+  
+  @media screen and (max-width: 768px) {
+    width: 90%; // Cambia el ancho de la línea para pantallas más pequeñas
+  }
+}
+
+/*ICHISOU*/
+.ichisou{
+  font-size: 10vw;
+  text-align: center;
+  font-family: "REDRESSED";
+  margin-bottom: 2%;
+}
+
+.grid-containerpg3 {
+  display: flex;
+  background-color: #b1b1b1;
+  padding: 10px;
+  margin-bottom: 5%;
+  .gridpg3-item {    
+    text-align: center;
+    p{  
+      padding-top: 20%;
+      font-size: 160%;
+    }
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
+}
+@media (max-width: 800px){
+  .grid-containerpg3{
+    flex-wrap: wrap;
+  }
+}
+
+}
+.galleryichisou {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+/*OSAKA*/
+.osaka {
+  font-family: 'Kanit', sans-serif;
+  font-size: 20rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+
+  @media (max-width: 768px){
+      font-size: 2rem;
+  }
+  
+  @media (max-width: 576px){
+      font-size: 1.5rem;
+  }
+}
+
+.containerosaka {
+  display: flex;
+  padding: 10px;
+
+  .contentosaka {
+      width: 50%;
+      padding: 20px;
+      text-align: center;
+      background-color: #949BA6;
+      color: #e2e2e2;
+      border-right: 1px solid #ccc;
+      align-items: center;
+      margin-right: 10px;
+      border-radius: 10px;
+      p{
+        padding-top: 15%;
+        font-size: 200%;
+      }
+  }
+
+  .imageosaka {
+      width: 50%;
+
+      img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          border-radius: 10px;
+      }
+  }
+}
+@media (max-width: 768px) {
+  .containerosaka {
+      flex-direction: column;
+
+      .contentosaka, .imageosaka {
+          width: 100%;
+      }
+  }
+}
+
+.galleryosaka {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+/*TENKUU*/
+.tenkuu {
+  font-family: 'Kanit', sans-serif;
+  font-size: 20rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+
+  @media (max-width: 768px){
+      font-size: 2rem;
+  }
+  
+  @media (max-width: 576px){
+      font-size: 1.5rem;
+  }
+}
+
+.containertenkuu {
+  display: flex;
+  padding: 10px;
+
+  .contenttenkuu {
+      width: 50%;
+      padding: 20px;
+      text-align: center;
+      background-color: #949BA6;
+      color: #e2e2e2;
+      border-right: 1px solid #ccc;
+      align-items: center;
+      margin-right: 10px;
+      border-radius: 10px;
+      p{
+        padding-top: 15%;
+        font-size: 200%;
+      }
+  }
+
+  .imagetenkuu {
+      width: 50%;
+
+      img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          border-radius: 10px
+      }
+  }
+}
+@media (max-width: 768px) {
+  .containertenkuu {
+      flex-direction: column;
+
+      .contenttekuu, .imagetenkuu {
+          width: 100%;
+      }
+  }
+}
+
+.gallerytenkuu {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+/*-----------PAGINA 4---------*/
+
+  /*-----MENU PRINCIPAL PIZZA------*/
+  .fotoprincipalpizzapg4{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      .imagen {
+          width: 100%;
+          height: auto;
+      }
+  }
+}
+  .flex-informacionpizzapg4{
+    display: flex;
+    align-items: center;
+
+    .textopizzapg4{
+      padding: 50px;
+      align-items: center;
+      text-align: center;
+      flex: 50%;
+
+      h1{      
+      padding: 10px;
+      font-size: 10vw;
+      }
+      p {      
+      padding: 10px;
+      font-size: 1.3vw;
+      }
+    }
+    .fotoprincipal2pizzapg4{
+      flex: 50%;
+      padding: 10px;
+      
+      img{
+        width: 50vw;
+        border-radius: 5%;
+      }
+    } 
+    @media (max-width: 700px){
+      .flex-informacionpizzapg4{
+      flex-wrap: wrap;
+      }
+      .textopizzapg4{
+        flex: 100%;
+        margin-bottom: 3%;
+      }
+      .textopizzapg4 > h1{
+      font-size: 50vw;
+      }
+      .textopizzapg4 > p{
+      font-size: 10vw;
+      }
+      
+      .fotoprincipalpizzapg4{
+        flex: 100%;
+      }
+      }
+  }
+  
+
+hr {
+  width: 80%;
+  height: 7px;
+  background-color: black;
+  margin: 20px auto; 
+  
+  @media screen and (max-width: 700px) {
+    width: 90%; 
+  }
+}
+/*EL CUARTITO*/
+.elcuartito{
+  font-size: 10vw;
+  text-align: center;
+  font-family: "REDRESSED";
+  margin-bottom: 2%;
+}
+
+.grid-containerelcuartito {
+  display: flex;
+  background-color: #b1b1b1;
+  padding: 10px;
+  margin-bottom: 5%;
+  img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .gridpg4-item {    
+    text-align: center;
+    p{  
+      padding-top: 20%;
+      font-size: 160%;
+    }
+    
+}
+@media (max-width: 800px){
+  .grid-containerelcuartito{
+    flex-wrap: wrap;
+  }
+}
+
+}
+.galleryelcuartito {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+/*LA MEZZETA*/
+.lamezzeta{
+  font-size: 10vw;
+  text-align: center;
+  font-family: "REDRESSED";
+  margin-bottom: 2%;
+}
+
+.containerlamezzeta {
+  display: flex;
+  background-color: #b1b1b1;
+  padding: 10px;
+  margin-bottom: 5%;
+  img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .contentlamezzeta {    
+    text-align: center;
+    p{  
+      padding-top: 20%;
+      font-size: 160%;
+    }    
+}
+@media (max-width: 800px){
+  .containerlamezzeta{
+    flex-wrap: wrap;
+  }
+}
+
+}
+.gallerylamezzeta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+}
+/*GUERRIN*/
+.guerrin{
+  font-size: 10vw;
+  text-align: center;
+  font-family: "REDRESSED";
+  margin-bottom: 2%;
+}
+
+.containerguerrin{
+  display: flex;
+  background-color: #b1b1b1;
+  padding: 10px;
+  margin-bottom: 5%;
+  img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .contentguerrin {    
+    text-align: center;    
+    p{  
+      padding-top: 20%;
+      font-size: 160%;
+    }    
+}
+@media (max-width: 800px){
+  .containerguerrin{
+    flex-wrap: wrap;
+  }
+}
+
+}
+.galleryguerrin {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+}
+
+/*-----------PAGINA 5---------*/
+
+  /*-----MENU PRINCIPAL CARNES------*/
+  .fotoprincipalcarnepg5{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      .imagen {
+          width: 100%;
+          height: auto;
+      }
+  }
+}
+  .flex-informacioncarnepg5{
+    display: flex;
+    align-items: center;
+
+    .textocarnepg5{
+      padding: 50px;
+      align-items: center;
+      text-align: center;
+      flex: 50%;
+
+      h1{      
+      padding: 10px;
+      font-size: 10vw;
+      }
+      p {      
+      padding: 10px;
+      font-size: 1.3vw;
+      }
+    }
+    .fotoprincipal2carnepg5{
+      flex: 50%;
+      padding: 10px;
+      
+      img{
+        width: 50vw;
+        border-radius: 5%;
+      }
+    } 
+    @media (max-width: 700px){
+      .flex-informacioncarnepg5{
+      flex-wrap: wrap;
+      }
+      .textocarnepg5{
+        flex: 100%;
+        margin-bottom: 3%;
+      }
+      .textocarnepg5 > h1{
+      font-size: 50vw;
+      }
+      .textocarnepg5 > p{
+      font-size: 10vw;
+      }
+      
+      .fotoprincipalcarnepg5{
+        flex: 100%;
+      }
+      }
+  }
+
+  /*DON JULIO*/
+.donjulio{
+  font-size: 10vw;
+  text-align: center;
+  font-family: "REDRESSED";
+  margin-bottom: 2%;
+}
+
+.containerdonjulio {
+  display: flex;
+  background-color: #b1b1b1;
+  padding: 10px;
+  margin-bottom: 5%;
+  img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .contentdonjulio {    
+    text-align: center;
+    p{  
+      padding-top: 20%;
+      font-size: 160%;
+    }
+    
+}
+@media (max-width: 800px){
+  .containerdonjulio{
+    flex-wrap: wrap;
+  }
+}
+
+}
+.gallerydonjulio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+/*FOGON ASADO*/
+.fogonasado{
+  font-size: 10vw;
+  text-align: center;
+  font-family: "REDRESSED";
+  margin-bottom: 2%;
+}
+
+.containerfogonasado{
+  display: flex;
+  background-color: #b1b1b1;
+  padding: 10px;
+  margin-bottom: 5%;
+    img{
+    width: 100%;
+    border-radius: 10px;
+    }
+  .contentfogonasado {    
+    text-align: center;
+    p{  
+      padding-top: 20%;
+      font-size: 160%;
+    }
+    }
+@media (max-width: 800px){
+  .containerfogonasado{
+    flex-wrap: wrap;
+  }
+}
+
+}
+.galleryfogonasado{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+/*LA CABRERA*/
+.lacabrera{
+  font-size: 10vw;
+  text-align: center;
+  font-family: "REDRESSED";
+  margin-bottom: 2%;
+}
+
+.containerlacabrera{
+  display: flex;
+  background-color: #b1b1b1;
+  padding: 10px;
+  margin-bottom: 5%;
+    img{
+    width: 100%;
+    border-radius: 10px;
+    }
+  .contentlacabrera {    
+    text-align: center;
+    p{  
+      padding-top: 20%;
+      font-size: 160%;
+    }
+    }
+@media (max-width: 800px){
+  .containerlacabrera{
+    flex-wrap: wrap;
+  }
+}
+
+}
+.gallerylacabrera{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+  
+
+
+
+
+
+
+
+
+/*-------PAGINA 6-------*/
+
+/* INCIAR SESION */
+
+.imagenfondopg7{
+  width: 99vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../imagenes/fotofondo1pg7.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.login-container {
+  max-width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  h2 {
+    margin-bottom: 20px;
+    color: white;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+}
+@media (max-width: 768px) {
+  .login-container {
+    width: 80%;
+  }
+}
+
+
+
+
+
+/*--------PAGINA 7 ---------*/
+
+.sobrenosotros{
+  text-align: center;
+  background: #000000;
+  color: #a3a3a3;
+  padding: 5% 10% 5% 10%;
+  font-family: "URBANIST";
+  .sobrenosotros1{
+    font-size: 3rem;
+  }
+  p{
+    font-size: 1.7rem;
+    line-height: 3rem;
+    font-family: "URBANIST";
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #6e9dbd;
+    color: #fff;
+    text-decoration: none;
+    font-size: 3rem;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+  }
+}
+
+
+
+
+
