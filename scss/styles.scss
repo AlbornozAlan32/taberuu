@@ -25,6 +25,49 @@
 
 /
 /*-----------PAGINA 1----------- */
+
+
+
+$breakpoint: 700px;
+
+.containerindex2 {
+    display: flex;
+
+    .leftindex2 {
+        width: 50%;
+        @include breakpoint($breakpoint) {
+            width: 100%;
+        }
+    }
+
+    .rightindex2 {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include breakpoint($breakpoint) {
+            width: 100%;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@function breakpoint($size) {
+    @return only screen and (max-width: $size);
+}
+
+
+
+
+
+
+
+
+
 /*IMAGEN PRINCIPAL*/
 .wrap{
   width: 100%;
