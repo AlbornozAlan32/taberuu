@@ -23,50 +23,7 @@
 
 
 
-/
 /*-----------PAGINA 1----------- */
-
-
-
-$breakpoint: 700px;
-
-.containerindex2 {
-    display: flex;
-
-    .leftindex2 {
-        width: 50%;
-        @include breakpoint($breakpoint) {
-            width: 100%;
-        }
-    }
-
-    .rightindex2 {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include breakpoint($breakpoint) {
-            width: 100%;
-        }
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-@function breakpoint($size) {
-    @return only screen and (max-width: $size);
-}
-
-
-
-
-
-
-
-
 
 /*IMAGEN PRINCIPAL*/
 .wrap{
@@ -296,13 +253,14 @@ section {
         border-radius: 5%;
       }
     } 
-    @media (max-width: 700px){
+    @media (max-width: 800px){
       .flex-informacionsushipg3{
-      flex-wrap: wrap;
+      flex-direction: column;
       }
       .textosushipg3{
         flex: 100%;
         margin-bottom: 3%;
+        padding: 0%;
       }
       .textosushipg3 > h1{
       font-size: 50vw;
@@ -312,7 +270,8 @@ section {
       }
       
       .fotoprincipal2sushipg3{
-        flex: 100%;
+        flex: 80%;
+        width: 50%;
       }
       }
   }
@@ -330,36 +289,61 @@ hr {
 }
 
 /*ICHISOU*/
-.ichisou{
-  font-size: 10vw;
-  text-align: center;
-  font-family: "REDRESSED";
-  margin-bottom: 2%;
-}
 
-.grid-containerpg3 {
-  display: flex;
-  background-color: #b1b1b1;
+.ichisou {
+  font-family: 'Kanit', sans-serif;
+  font-size: 12rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
   padding: 10px;
-  margin-bottom: 5%;
-  .gridpg3-item {    
-    text-align: center;
-    p{  
-      padding-top: 20%;
-      font-size: 160%;
-    }
-    img{
-      width: 100%;
-      border-radius: 10px;
-    }
-}
-@media (max-width: 800px){
-  .grid-containerpg3{
-    flex-wrap: wrap;
+
+  @media (max-width: 768px){
+      font-size: 2rem;
+  }
+  
+  @media (max-width: 576px){
+      font-size: 1.5rem;
   }
 }
 
+.containerichisou {
+  display: flex;
+  padding: 10px;
+
+  .contentichisou {
+    flex: 1;
+    padding: 10px;
+      p{
+        padding-top: 15%;
+        font-size: 245%
+      }
+  }
+
+  .imageichisou {
+    flex: 1;
+    padding: 10px;
+      img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 8%;
+      }
+  }
 }
+@media (max-width: 700px) {
+  .containerichisou {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    .contentichisou, p {
+      font-size: 40%;
+    }
+    .contentichisou, .imageichisou {
+        width: 80%;
+    }
+}
+}
+
 .galleryichisou {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -371,6 +355,8 @@ hr {
     border-radius: 10px;
   }
 }
+
+
 
 /*OSAKA*/
 .osaka {
@@ -395,38 +381,34 @@ hr {
   padding: 10px;
 
   .contentosaka {
-      width: 50%;
-      padding: 20px;
-      text-align: center;
-      background-color: #949BA6;
-      color: #e2e2e2;
-      border-right: 1px solid #ccc;
-      align-items: center;
-      margin-right: 10px;
-      border-radius: 10px;
+    flex: 1;
+    padding: 10px;
       p{
         padding-top: 15%;
-        font-size: 200%;
+        font-size: 250%;
       }
   }
 
   .imageosaka {
-      width: 50%;
-
+    flex: 1;
+    padding: 10px;
       img {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-          border-radius: 10px;
+        max-width: 90%;
+        height: auto;
+        border-radius: 10%;
       }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .containerosaka {
       flex-direction: column;
-
+      text-align: center;
+      align-items: center;
+      .contentosaka, p {
+        font-size: 40%;
+      }
       .contentosaka, .imageosaka {
-          width: 100%;
+          width: 70%;
       }
   }
 }

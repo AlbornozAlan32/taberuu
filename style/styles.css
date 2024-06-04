@@ -6,6 +6,14 @@
 5-CARNES
 6-INCIAR SESION
 7-SOBRE NOSTROS*/
+/*------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 /*-----FUENTES------*/
 @font-face {
   font-family: "SPECTRALSC-REGULAR";
@@ -31,14 +39,6 @@
   font-family: "KANIT";
   src: url(../fuentes/Kanit-Thin.ttf);
 }
-/*------------------------------*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-}
-
 /*-----MENU DE NAVEGACION-------*/
 nav {
   display: flex;
@@ -347,13 +347,14 @@ section article p {
   width: 50vw;
   border-radius: 5%;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .flex-informacionsushipg3 .flex-informacionsushipg3 {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .flex-informacionsushipg3 .textosushipg3 {
     flex: 100%;
     margin-bottom: 3%;
+    padding: 0%;
   }
   .flex-informacionsushipg3 .textosushipg3 > h1 {
     font-size: 50vw;
@@ -362,7 +363,8 @@ section article p {
     font-size: 10vw;
   }
   .flex-informacionsushipg3 .fotoprincipal2sushipg3 {
-    flex: 100%;
+    flex: 80%;
+    width: 50%;
   }
 }
 
@@ -380,35 +382,59 @@ hr {
 
 /*ICHISOU*/
 .ichisou {
-  font-size: 10vw;
+  font-family: "Kanit", sans-serif;
+  font-size: 12rem;
+  color: #333;
   text-align: center;
-  font-family: "REDRESSED";
-  margin-bottom: 2%;
-}
-
-.grid-containerpg3 {
-  display: flex;
-  background-color: #b1b1b1;
+  margin: 0;
   padding: 10px;
-  margin-bottom: 5%;
 }
-.grid-containerpg3 .gridpg3-item {
-  text-align: center;
+@media (max-width: 768px) {
+  .ichisou {
+    font-size: 2rem;
+  }
 }
-.grid-containerpg3 .gridpg3-item p {
-  padding-top: 20%;
-  font-size: 160%;
-}
-.grid-containerpg3 .gridpg3-item img {
-  width: 100%;
-  border-radius: 10px;
-}
-@media (max-width: 800px) {
-  .grid-containerpg3 .grid-containerpg3 {
-    flex-wrap: wrap;
+@media (max-width: 576px) {
+  .ichisou {
+    font-size: 1.5rem;
   }
 }
 
+.containerichisou {
+  display: flex;
+  padding: 10px;
+}
+.containerichisou .contentichisou {
+  flex: 1;
+  padding: 10px;
+}
+.containerichisou .contentichisou p {
+  padding-top: 15%;
+  font-size: 245%;
+}
+.containerichisou .imageichisou {
+  flex: 1;
+  padding: 10px;
+}
+.containerichisou .imageichisou img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8%;
+}
+
+@media (max-width: 700px) {
+  .containerichisou {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .containerichisou .contentichisou, .containerichisou p {
+    font-size: 40%;
+  }
+  .containerichisou .contentichisou, .containerichisou .imageichisou {
+    width: 80%;
+  }
+}
 .galleryichisou {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -447,37 +473,34 @@ hr {
   padding: 10px;
 }
 .containerosaka .contentosaka {
-  width: 50%;
-  padding: 20px;
-  text-align: center;
-  background-color: #949BA6;
-  color: #e2e2e2;
-  border-right: 1px solid #ccc;
-  align-items: center;
-  margin-right: 10px;
-  border-radius: 10px;
+  flex: 1;
+  padding: 10px;
 }
 .containerosaka .contentosaka p {
   padding-top: 15%;
-  font-size: 200%;
+  font-size: 250%;
 }
 .containerosaka .imageosaka {
-  width: 50%;
+  flex: 1;
+  padding: 10px;
 }
 .containerosaka .imageosaka img {
-  width: 100%;
+  max-width: 90%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
+  border-radius: 10%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .containerosaka {
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .containerosaka .contentosaka, .containerosaka p {
+    font-size: 40%;
   }
   .containerosaka .contentosaka, .containerosaka .imageosaka {
-    width: 100%;
+    width: 70%;
   }
 }
 .galleryosaka {
