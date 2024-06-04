@@ -8,31 +8,6 @@
 7-SOBRE NOSTROS*/
 
 
-/*-----FUENTES------*/
-@font-face {
-    font-family: "SPECTRALSC-REGULAR";
-    src: url(../fuentes/SpectralSC-Regular.ttf);
-  }
-  @font-face{
-    font-family: "URBANIST";
-    src: url(../fuentes/Urbanist-VariableFont_wght.ttf);
-  }
-  @font-face{
-    font-family: "REDRESSED";
-    src: url(../fuentes/Redressed-Regular.ttf);
-  }
-  @font-face{
-    font-family: "SPECTRALSC";
-    src: url(../fuentes/SpectralSC-ExtraLight.ttf);
-  }
-  @font-face{
-    font-family: "VIDALOKA";
-    src: url(../fuentes/Vidaloka-Regular.ttf);
-  }
-  @font-face{
-    font-family: "KANIT";
-    src: url(../fuentes/Kanit-Thin.ttf);
-  }
 
   /*------------------------------*/
 * {
@@ -42,109 +17,13 @@
     width: 100%;
 }
 
-/*-----MENU DE NAVEGACION-------*/
-
-nav{
-    display: flex;
-    background-color: #000000;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2%;
-    & :hover{
-      color: orange;
-    }
-    a{
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      h2{
-        color: #e4e4e4ce;
-        margin-left: 5%;
-        font-family: "URBANIST";
-        font-size: 300%;
-        opacity: 80%;
-      }
-      img{
-        width: 15%;
-        margin-right: 2%;
-      }
-    }
-    nav{
-      display: flex;
-      a{
-        text-decoration: none;
-        color: #e4e4e4ce;
-        font-size: 20px;
-        opacity: 80%;
-      }
-    }
-  }  
-  @media  (max-width: 700px){
-    .header{
-      flex-direction: column;
-    }
-    .nav{
-      padding: 10px 0px;
-    }
-    .logo-nombre{
-      font-size: 100%;
-    }
-    .nav a{
-      font-size: 80%;
-    }
-  }
+@import "fonts";
+@import "header";
+@import "footer";
 
 
-/*--------footer--------*/
 
-footer {
-  background-color: rgba(0, 0, 0, 0.247); 
-  padding: 10px;  
-  .arrowupcircle{
-    position: fixed;
-    bottom: 2%;
-    right: 2%;
-    width: 50px;
-  }
-  p{
-    text-align: center;
-    padding-top: 2%;
-    font-weight: bold;
-  }
-  .footer1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    .footer2{
-      color: #535353; 
-      transition: color 0.3s;
-      margin-left: 10%;
-      & :hover {
-        color: orange; 
-        cursor: pointer;
-      }
-      a{
-        padding-right: 50px;
-        text-decoration: none;
-        color: #000000;
-        font-weight: bold;
-        font-size: 20px;
-      }
-      
-    }
-    .footer3{
-      margin-left: 30%;
-      a{
-        margin-right: 20px;         
-      }
-      img{
-        width: 40px;
-        }
-      }
-    }    
-  }
-
+/
 /*-----------PAGINA 1----------- */
 /*IMAGEN PRINCIPAL*/
 .wrap{
@@ -244,69 +123,6 @@ section {
       width: 100%;
     }
   }
-
-
-  .containerindex1 {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 10px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .textoindex1, .imagen {
-    flex: 1;
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  .textoindex1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-    h1 {
-      font-family: 'Brush Script MT', cursive;
-      font-size: 48px;
-      margin: 0;
-    }
-  
-    h2 {
-      font-size: 36px;
-      color: #f39c12;
-      margin: 10px 0;
-    }
-  
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #333;
-    }
-  }
-  
-  .imagenindex1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
-  
-  @media (max-width: 700px) {
-    .containerindex1 {
-      margin: 0;
-    }
-  }
-
-
-
-
-
 
 
 

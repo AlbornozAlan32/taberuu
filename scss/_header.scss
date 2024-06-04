@@ -1,0 +1,51 @@
+/*-----MENU DE NAVEGACION-------*/
+
+nav{
+    display: flex;
+    background-color: #000000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    & :hover{
+      color: orange;
+    }
+    a{
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      h2{
+        color: #e4e4e4ce;
+        margin-left: 5%;
+        font-family: "URBANIST";
+        font-size: 300%;
+        opacity: 80%;
+      }
+      img{
+        width: 15%;
+        margin-right: 2%;
+      }
+    }
+    nav{
+      display: flex;
+      a{
+        text-decoration: none;
+        color: #e4e4e4ce;
+        font-size: 20px;
+        opacity: 80%;
+      }
+    }
+  }  
+  @media  (max-width: 700px){
+    .header{
+      flex-direction: column;
+    }
+    .nav{
+      padding: 10px 0px;
+    }
+    .logo-nombre{
+      font-size: 100%;
+    }
+    .nav a{
+      font-size: 80%;
+    }
+  }
