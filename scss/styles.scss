@@ -577,8 +577,8 @@ hr {
 }
 /*EL CUARTITO*/
 .elcuartito {
-  font-family: 'Kanit', sans-serif;
-  font-size: 20rem;
+  font-family: "REDRESSED";
+  font-size: 15rem;
   color: #333;
   text-align: center;
   margin: 0;
@@ -642,36 +642,60 @@ hr {
 }
 
 /*LA MEZZETA*/
-.lamezzeta{
-  font-size: 10vw;
-  text-align: center;
+.lamezzeta {
   font-family: "REDRESSED";
-  margin-bottom: 2%;
+  font-size: 15rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+
+  @media (max-width: 768px){
+      font-size: 2rem;
+  }
+  
+  @media (max-width: 576px){
+      font-size: 1.5rem;
+  }
 }
 
 .containerlamezzeta {
   display: flex;
-  background-color: #b1b1b1;
   padding: 10px;
-  margin-bottom: 5%;
-  img{
-    width: 100%;
-    border-radius: 10px;
+
+  .contentlamezzeta {
+    flex: 1;
+    padding: 10px;
+      p{
+        padding-top: 15%;
+        font-size: 200%;
+      }
   }
-  .contentlamezzeta {    
-    text-align: center;
-    p{  
-      padding-top: 20%;
-      font-size: 160%;
-    }    
+
+  .imagelamezzeta{
+    flex: 1;
+    padding: 10px;
+      img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 10%;
+      }
+  }
 }
-@media (max-width: 800px){
-  .containerlamezzeta{
-    flex-wrap: wrap;
+@media (max-width: 800px) {
+  .containerlamezzeta {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      .contentlamezzeta, p {
+        font-size: 40%;
+      }
+      .contentlamezzeta, .imagelamezzeta {
+          width: 70%;
+      }
   }
 }
 
-}
 .gallerylamezzeta {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -685,35 +709,58 @@ hr {
 
 }
 /*GUERRIN*/
-.guerrin{
-  font-size: 10vw;
-  text-align: center;
+.guerrin {
   font-family: "REDRESSED";
-  margin-bottom: 2%;
-}
-
-.containerguerrin{
-  display: flex;
-  background-color: #b1b1b1;
+  font-size: 15rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
   padding: 10px;
-  margin-bottom: 5%;
-  img{
-    width: 100%;
-    border-radius: 10px;
+
+  @media (max-width: 768px){
+      font-size: 2rem;
   }
-  .contentguerrin {    
-    text-align: center;    
-    p{  
-      padding-top: 20%;
-      font-size: 160%;
-    }    
-}
-@media (max-width: 800px){
-  .containerguerrin{
-    flex-wrap: wrap;
+  
+  @media (max-width: 576px){
+      font-size: 1.5rem;
   }
 }
 
+.containerguerrin {
+  display: flex;
+  padding: 10px;
+
+  .contentguerrin {
+    flex: 1;
+    padding: 10px;
+      p{
+        padding-top: 15%;
+        font-size: 200%;
+      }
+  }
+
+  .imageguerrin{
+    flex: 1;
+    padding: 10px;
+      img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 10%;
+      }
+  }
+}
+@media (max-width: 800px) {
+  .containerguerrin {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      .contentguerrin, p {
+        font-size: 40%;
+      }
+      .contentguerrin, .imageguerrin{
+          width: 70%;
+      }
+  }
 }
 .galleryguerrin {
   display: grid;
@@ -745,54 +792,61 @@ hr {
       }
   }
 }
-  .flex-informacioncarnepg5{
-    display: flex;
-    align-items: center;
-
-    .textocarnepg5{
-      padding: 50px;
-      align-items: center;
-      text-align: center;
-      flex: 50%;
-
-      h1{      
-      padding: 10px;
-      font-size: 10vw;
-      }
-      p {      
-      padding: 10px;
-      font-size: 1.3vw;
-      }
+  .carne {
+    font-family: "URBANIST";
+    font-size: 15rem;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  
+    @media (max-width: 768px){
+        font-size: 2rem;
     }
-    .fotoprincipal2carnepg5{
-      flex: 50%;
-      padding: 10px;
-      
-      img{
-        width: 50vw;
-        border-radius: 5%;
-      }
-    } 
-    @media (max-width: 700px){
-      .flex-informacioncarnepg5{
-      flex-wrap: wrap;
-      }
-      .textocarnepg5{
-        flex: 100%;
-        margin-bottom: 3%;
-      }
-      .textocarnepg5 > h1{
-      font-size: 50vw;
-      }
-      .textocarnepg5 > p{
-      font-size: 10vw;
-      }
-      
-      .fotoprincipalcarnepg5{
-        flex: 100%;
-      }
-      }
+    
+    @media (max-width: 576px){
+        font-size: 1.5rem;
+    }
   }
+  
+  .containercarne {
+    display: flex;
+    padding: 10px;
+  
+    .contentcarne {
+      flex: 1;
+      padding: 10px;
+        p{
+          padding-top: 15%;
+          font-size: 200%;
+        }
+    }
+  
+    .imagecarne{
+      flex: 1;
+      padding: 10px;
+        img {
+          max-width: 90%;
+          height: auto;
+          border-radius: 10%;
+        }
+    }
+  }
+  @media (max-width: 800px) {
+    .containercarne {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .contentcarne, p {
+          font-size: 40%;
+        }
+        .contentcarne, .imagecarne{
+            width: 70%;
+        }
+    }
+  }
+  
+
 
   /*DON JULIO*/
 .donjulio{

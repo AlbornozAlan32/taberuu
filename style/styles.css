@@ -663,8 +663,8 @@ hr {
 
 /*EL CUARTITO*/
 .elcuartito {
-  font-family: "Kanit", sans-serif;
-  font-size: 20rem;
+  font-family: "REDRESSED";
+  font-size: 15rem;
   color: #333;
   text-align: center;
   margin: 0;
@@ -731,35 +731,59 @@ hr {
 
 /*LA MEZZETA*/
 .lamezzeta {
-  font-size: 10vw;
-  text-align: center;
   font-family: "REDRESSED";
-  margin-bottom: 2%;
+  font-size: 15rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .lamezzeta {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .lamezzeta {
+    font-size: 1.5rem;
+  }
 }
 
 .containerlamezzeta {
   display: flex;
-  background-color: #b1b1b1;
   padding: 10px;
-  margin-bottom: 5%;
-}
-.containerlamezzeta img {
-  width: 100%;
-  border-radius: 10px;
 }
 .containerlamezzeta .contentlamezzeta {
-  text-align: center;
+  flex: 1;
+  padding: 10px;
 }
 .containerlamezzeta .contentlamezzeta p {
-  padding-top: 20%;
-  font-size: 160%;
+  padding-top: 15%;
+  font-size: 200%;
 }
-@media (max-width: 800px) {
-  .containerlamezzeta .containerlamezzeta {
-    flex-wrap: wrap;
-  }
+.containerlamezzeta .imagelamezzeta {
+  flex: 1;
+  padding: 10px;
+}
+.containerlamezzeta .imagelamezzeta img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10%;
 }
 
+@media (max-width: 800px) {
+  .containerlamezzeta {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .containerlamezzeta .contentlamezzeta, .containerlamezzeta p {
+    font-size: 40%;
+  }
+  .containerlamezzeta .contentlamezzeta, .containerlamezzeta .imagelamezzeta {
+    width: 70%;
+  }
+}
 .gallerylamezzeta {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -775,35 +799,59 @@ hr {
 
 /*GUERRIN*/
 .guerrin {
-  font-size: 10vw;
-  text-align: center;
   font-family: "REDRESSED";
-  margin-bottom: 2%;
+  font-size: 15rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .guerrin {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .guerrin {
+    font-size: 1.5rem;
+  }
 }
 
 .containerguerrin {
   display: flex;
-  background-color: #b1b1b1;
   padding: 10px;
-  margin-bottom: 5%;
-}
-.containerguerrin img {
-  width: 100%;
-  border-radius: 10px;
 }
 .containerguerrin .contentguerrin {
-  text-align: center;
+  flex: 1;
+  padding: 10px;
 }
 .containerguerrin .contentguerrin p {
-  padding-top: 20%;
-  font-size: 160%;
+  padding-top: 15%;
+  font-size: 200%;
 }
-@media (max-width: 800px) {
-  .containerguerrin .containerguerrin {
-    flex-wrap: wrap;
-  }
+.containerguerrin .imageguerrin {
+  flex: 1;
+  padding: 10px;
+}
+.containerguerrin .imageguerrin img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10%;
 }
 
+@media (max-width: 800px) {
+  .containerguerrin {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .containerguerrin .contentguerrin, .containerguerrin p {
+    font-size: 40%;
+  }
+  .containerguerrin .contentguerrin, .containerguerrin .imageguerrin {
+    width: 70%;
+  }
+}
 .galleryguerrin {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -834,51 +882,60 @@ hr {
   }
 }
 
-.flex-informacioncarnepg5 {
-  display: flex;
-  align-items: center;
-}
-.flex-informacioncarnepg5 .textocarnepg5 {
-  padding: 50px;
-  align-items: center;
+.carne {
+  font-family: "URBANIST";
+  font-size: 15rem;
+  color: #333;
   text-align: center;
-  flex: 50%;
-}
-.flex-informacioncarnepg5 .textocarnepg5 h1 {
-  padding: 10px;
-  font-size: 10vw;
-}
-.flex-informacioncarnepg5 .textocarnepg5 p {
-  padding: 10px;
-  font-size: 1.3vw;
-}
-.flex-informacioncarnepg5 .fotoprincipal2carnepg5 {
-  flex: 50%;
+  margin: 0;
   padding: 10px;
 }
-.flex-informacioncarnepg5 .fotoprincipal2carnepg5 img {
-  width: 50vw;
-  border-radius: 5%;
+@media (max-width: 768px) {
+  .carne {
+    font-size: 2rem;
+  }
 }
-@media (max-width: 700px) {
-  .flex-informacioncarnepg5 .flex-informacioncarnepg5 {
-    flex-wrap: wrap;
-  }
-  .flex-informacioncarnepg5 .textocarnepg5 {
-    flex: 100%;
-    margin-bottom: 3%;
-  }
-  .flex-informacioncarnepg5 .textocarnepg5 > h1 {
-    font-size: 50vw;
-  }
-  .flex-informacioncarnepg5 .textocarnepg5 > p {
-    font-size: 10vw;
-  }
-  .flex-informacioncarnepg5 .fotoprincipalcarnepg5 {
-    flex: 100%;
+@media (max-width: 576px) {
+  .carne {
+    font-size: 1.5rem;
   }
 }
 
+.containercarne {
+  display: flex;
+  padding: 10px;
+}
+.containercarne .contentcarne {
+  flex: 1;
+  padding: 10px;
+}
+.containercarne .contentcarne p {
+  padding-top: 15%;
+  font-size: 200%;
+}
+.containercarne .imagecarne {
+  flex: 1;
+  padding: 10px;
+}
+.containercarne .imagecarne img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10%;
+}
+
+@media (max-width: 800px) {
+  .containercarne {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .containercarne .contentcarne, .containercarne p {
+    font-size: 40%;
+  }
+  .containercarne .contentcarne, .containercarne .imagecarne {
+    width: 70%;
+  }
+}
 /*DON JULIO*/
 .donjulio {
   font-size: 10vw;
