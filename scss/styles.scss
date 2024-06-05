@@ -25,26 +25,6 @@
 
 /*-----------PAGINA 1----------- */
 
-.contenedorindex2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 50%;
-  border: 1px solid $background-color;
-
-  p {
-      width: 50%;
-      text-align: center;
-      padding: 20px;
-      font-family: 'Roboto', sans-serif;
-  }
-
-  img {
-      width: 50%;
-      height: auto;
-  }
-}
 
 
 /*IMAGEN PRINCIPAL*/
@@ -465,46 +445,43 @@ hr {
   }
 }
 
-.containertenkuu {
+.containertenkuu{
   display: flex;
   padding: 10px;
 
   .contenttenkuu {
-      width: 50%;
-      padding: 20px;
-      text-align: center;
-      background-color: #949BA6;
-      color: #e2e2e2;
-      border-right: 1px solid #ccc;
-      align-items: center;
-      margin-right: 10px;
-      border-radius: 10px;
+    flex: 1;
+    padding: 10px;
       p{
         padding-top: 15%;
-        font-size: 200%;
+        font-size: 250%;
       }
   }
 
   .imagetenkuu {
-      width: 50%;
-
+    flex: 1;
+    padding: 10px;
       img {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-          border-radius: 10px
+        max-width: 90%;
+        height: auto;
+        border-radius: 10%;
       }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .containertenkuu {
       flex-direction: column;
-
-      .contenttekuu, .imagetenkuu {
-          width: 100%;
+      text-align: center;
+      align-items: center;
+      .contenttenkuu, p {
+        font-size: 40%;
+      }
+      .contenttenkuu, .imagetenkuu {
+          width: 70%;
       }
   }
 }
+
 
 .gallerytenkuu {
   margin-top: 100px;
