@@ -25,6 +25,28 @@
 
 /*-----------PAGINA 1----------- */
 
+.contenedorindex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  border: 1px solid $background-color;
+
+  p {
+      width: 50%;
+      text-align: center;
+      padding: 20px;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  img {
+      width: 50%;
+      height: auto;
+  }
+}
+
+
 /*IMAGEN PRINCIPAL*/
 .wrap{
   width: 100%;
