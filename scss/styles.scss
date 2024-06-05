@@ -251,7 +251,7 @@ section {
       padding: 10px;
       
       img{
-        width: 50vw;
+        width: 50%;
         border-radius: 5%;
       }
     } 
@@ -272,8 +272,10 @@ section {
       }
       
       .fotoprincipal2sushipg3{
-        flex: 80%;
-        width: 50%;
+        flex: 50%;
+      }
+      .fotoprincipal2sushipg3, img{
+        width: 50px;
       }
       }
   }
@@ -387,7 +389,7 @@ hr {
     padding: 10px;
       p{
         padding-top: 15%;
-        font-size: 250%;
+        font-size: 200%;
       }
   }
 
@@ -428,6 +430,60 @@ hr {
 }
 
 /*TENKUU*/
+.tenkuu {
+  font-family: 'Kanit', sans-serif;
+  font-size: 12rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+
+  @media (max-width: 768px){
+      font-size: 2rem;
+  }
+  
+  @media (max-width: 576px){
+      font-size: 1.5rem;
+  }
+}
+
+.containertenkuu {
+  display: flex;
+  padding: 10px;
+
+  .contenttenkuu {
+    flex: 1;
+    padding: 10px;
+      p{
+        padding-top: 15%;
+        font-size: 245%
+      }
+  }
+
+  .imagetenkuu{
+    flex: 1;
+    padding: 10px;
+      img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 8%;
+      }
+  }
+}
+@media (max-width: 700px) {
+  .containertenkuu {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    .contenttenkuu, p {
+      font-size: 40%;
+    }
+    .contenttenkuu, .imagetenkuu {
+        width: 80%;
+    }
+}
+}
+
 
 .gallerytenkuu {
   margin-top: 100px;
