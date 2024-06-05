@@ -344,7 +344,7 @@ section article p {
   padding: 10px;
 }
 .flex-informacionsushipg3 .fotoprincipal2sushipg3 img {
-  width: 50vw;
+  width: 50%;
   border-radius: 5%;
 }
 @media (max-width: 800px) {
@@ -363,8 +363,10 @@ section article p {
     font-size: 10vw;
   }
   .flex-informacionsushipg3 .fotoprincipal2sushipg3 {
-    flex: 80%;
-    width: 50%;
+    flex: 50%;
+  }
+  .flex-informacionsushipg3 .fotoprincipal2sushipg3, .flex-informacionsushipg3 img {
+    width: 50px;
   }
 }
 
@@ -478,7 +480,7 @@ hr {
 }
 .containerosaka .contentosaka p {
   padding-top: 15%;
-  font-size: 250%;
+  font-size: 200%;
 }
 .containerosaka .imageosaka {
   flex: 1;
@@ -519,7 +521,7 @@ hr {
 /*TENKUU*/
 .tenkuu {
   font-family: "Kanit", sans-serif;
-  font-size: 20rem;
+  font-size: 12rem;
   color: #333;
   text-align: center;
   margin: 0;
@@ -541,37 +543,34 @@ hr {
   padding: 10px;
 }
 .containertenkuu .contenttenkuu {
-  width: 50%;
-  padding: 20px;
-  text-align: center;
-  background-color: #949BA6;
-  color: #e2e2e2;
-  border-right: 1px solid #ccc;
-  align-items: center;
-  margin-right: 10px;
-  border-radius: 10px;
+  flex: 1;
+  padding: 10px;
 }
 .containertenkuu .contenttenkuu p {
   padding-top: 15%;
-  font-size: 200%;
+  font-size: 245%;
 }
 .containertenkuu .imagetenkuu {
-  width: 50%;
+  flex: 1;
+  padding: 10px;
 }
 .containertenkuu .imagetenkuu img {
-  width: 100%;
+  max-width: 90%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .containertenkuu {
     flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
-  .containertenkuu .contenttekuu, .containertenkuu .imagetenkuu {
-    width: 100%;
+  .containertenkuu .contenttenkuu, .containertenkuu p {
+    font-size: 40%;
+  }
+  .containertenkuu .contenttenkuu, .containertenkuu .imagetenkuu {
+    width: 80%;
   }
 }
 .gallerytenkuu {
@@ -664,35 +663,59 @@ hr {
 
 /*EL CUARTITO*/
 .elcuartito {
-  font-size: 10vw;
+  font-family: "Kanit", sans-serif;
+  font-size: 20rem;
+  color: #333;
   text-align: center;
-  font-family: "REDRESSED";
-  margin-bottom: 2%;
-}
-
-.grid-containerelcuartito {
-  display: flex;
-  background-color: #b1b1b1;
+  margin: 0;
   padding: 10px;
-  margin-bottom: 5%;
 }
-.grid-containerelcuartito img {
-  width: 100%;
-  border-radius: 10px;
+@media (max-width: 768px) {
+  .elcuartito {
+    font-size: 2rem;
+  }
 }
-.grid-containerelcuartito .gridpg4-item {
-  text-align: center;
-}
-.grid-containerelcuartito .gridpg4-item p {
-  padding-top: 20%;
-  font-size: 160%;
-}
-@media (max-width: 800px) {
-  .grid-containerelcuartito .grid-containerelcuartito {
-    flex-wrap: wrap;
+@media (max-width: 576px) {
+  .elcuartito {
+    font-size: 1.5rem;
   }
 }
 
+.containerelcuartito {
+  display: flex;
+  padding: 10px;
+}
+.containerelcuartito .contentelcuartito {
+  flex: 1;
+  padding: 10px;
+}
+.containerelcuartito .contentelcuartito p {
+  padding-top: 15%;
+  font-size: 200%;
+}
+.containerelcuartito .imagecuartito {
+  flex: 1;
+  padding: 10px;
+}
+.containerelcuartito .imagecuartito img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10%;
+}
+
+@media (max-width: 800px) {
+  .containerelcuartito {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .containerelcuartito .contentelcuartito, .containerelcuartito p {
+    font-size: 40%;
+  }
+  .containerelcuartito .contentelcuartito, .containerelcuartito .imagecuartito {
+    width: 70%;
+  }
+}
 .galleryelcuartito {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
