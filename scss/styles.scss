@@ -792,58 +792,53 @@ hr {
       }
   }
 }
-  .carne {
-    font-family: "URBANIST";
-    font-size: 15rem;
-    color: #333;
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-  
-    @media (max-width: 768px){
-        font-size: 2rem;
-    }
-    
-    @media (max-width: 576px){
-        font-size: 1.5rem;
-    }
-  }
-  
-  .containercarne {
+  .flex-informacioncarnepg5{
     display: flex;
-    padding: 10px;
-  
-    .contentcarne {
-      flex: 1;
+    align-items: center;
+
+    .textocarnepg5{
+      padding: 50px;
+      align-items: center;
+      text-align: center;
+      flex: 50%;
+
+      h1{      
       padding: 10px;
-        p{
-          padding-top: 15%;
-          font-size: 200%;
-        }
-    }
-  
-    .imagecarne{
-      flex: 1;
+      font-size: 10vw;
+      }
+      p {      
       padding: 10px;
-        img {
-          max-width: 90%;
-          height: auto;
-          border-radius: 10%;
-        }
+      font-size: 1.3vw;
+      }
     }
-  }
-  @media (max-width: 800px) {
-    .containercarne {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        .contentcarne, p {
-          font-size: 40%;
-        }
-        .contentcarne, .imagecarne{
-            width: 70%;
-        }
-    }
+    .fotoprincipal2carnepg5{
+      flex: 50%;
+      padding: 10px;
+      
+      img{
+        width: 50vw;
+        border-radius: 5%;
+      }
+    } 
+    @media (max-width: 700px){
+      .flex-informacioncarnepg5{
+      flex-wrap: wrap;
+      }
+      .textocarnepg5{
+        flex: 100%;
+        margin-bottom: 3%;
+      }
+      .textocarnepg5 > h1{
+      font-size: 50vw;
+      }
+      .textocarnepg5 > p{
+      font-size: 10vw;
+      }
+      
+      .fotoprincipalcarnepg5{
+        flex: 100%;
+      }
+      }
   }
   
 
