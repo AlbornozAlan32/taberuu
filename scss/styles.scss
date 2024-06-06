@@ -596,13 +596,15 @@ hr {
 .containerelcuartito {
   display: flex;
   padding: 10px;
+  align-items: center;
+  text-align: center;
 
   .contentelcuartito {
     flex: 1;
     padding: 10px;
       p{
         padding-top: 15%;
-        font-size: 200%;
+        font-size: 160%;
       }
   }
 
@@ -662,13 +664,15 @@ hr {
 .containerlamezzeta {
   display: flex;
   padding: 10px;
+  align-items: center;
+  text-align: center;
 
   .contentlamezzeta {
     flex: 1;
     padding: 10px;
       p{
         padding-top: 15%;
-        font-size: 200%;
+        font-size: 160%;
       }
   }
 
@@ -743,7 +747,7 @@ hr {
     flex: 1;
     padding: 10px;
       img {
-        max-width: 90%;
+        max-width: 80%;
         height: auto;
         border-radius: 10%;
       }
@@ -758,7 +762,7 @@ hr {
         font-size: 40%;
       }
       .contentguerrin, .imageguerrin{
-          width: 70%;
+          width: 65%;
       }
   }
 }
@@ -1004,7 +1008,7 @@ hr {
     padding: 10px;
       p{
         padding: 15%;
-        font-size: 260%;
+        font-size: 150%;
         text-align: center;
 
       }
