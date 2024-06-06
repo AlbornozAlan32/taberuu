@@ -869,11 +869,9 @@ hr {
 /*-----MENU PRINCIPAL CARNES------*/
 .fotoprincipalcarnepg5 {
   width: 100%;
-  height: auto;
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .fotoprincipalcarnepg5 .imagen {
@@ -905,7 +903,7 @@ hr {
   padding: 10px;
 }
 .flex-informacioncarnepg5 .fotoprincipal2carnepg5 img {
-  width: 50vw;
+  width: 40vw;
   border-radius: 5%;
 }
 @media (max-width: 700px) {
@@ -927,37 +925,63 @@ hr {
   }
 }
 
-/*DON JULIO*/
+/*DON JULIO 2*/
 .donjulio {
-  font-size: 10vw;
-  text-align: center;
   font-family: "REDRESSED";
-  margin-bottom: 2%;
+  font-size: 15rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .donjulio {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .donjulio {
+    font-size: 1.5rem;
+  }
 }
 
 .containerdonjulio {
   display: flex;
-  background-color: #b1b1b1;
   padding: 10px;
-  margin-bottom: 5%;
-}
-.containerdonjulio img {
-  width: 100%;
-  border-radius: 10px;
 }
 .containerdonjulio .contentdonjulio {
-  text-align: center;
+  flex: 1;
+  padding: 10px;
 }
 .containerdonjulio .contentdonjulio p {
-  padding-top: 20%;
-  font-size: 160%;
+  margin-top: 20%;
+  padding: 10%;
+  font-size: 250%;
+  text-align: center;
 }
-@media (max-width: 800px) {
-  .containerdonjulio .containerdonjulio {
-    flex-wrap: wrap;
-  }
+.containerdonjulio .imagedonjulio {
+  flex: 1;
+  padding: 10px;
+}
+.containerdonjulio .imagedonjulio img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10%;
 }
 
+@media (max-width: 800px) {
+  .containerdonjulio {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .containerdonjulio .contentdonjulio, .containerdonjulio p {
+    font-size: 40%;
+  }
+  .containerdonjulio .contentdonjulio, .containerdonjulio .imagedonjulio {
+    width: 70%;
+  }
+}
 .gallerydonjulio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -973,35 +997,62 @@ hr {
 
 /*FOGON ASADO*/
 .fogonasado {
-  font-size: 10vw;
-  text-align: center;
   font-family: "REDRESSED";
-  margin-bottom: 2%;
+  font-size: 15rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .fogonasado {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .fogonasado {
+    font-size: 1.5rem;
+  }
 }
 
 .containerfogonasado {
   display: flex;
-  background-color: #b1b1b1;
   padding: 10px;
-  margin-bottom: 5%;
-}
-.containerfogonasado img {
-  width: 100%;
-  border-radius: 10px;
+  text-align: center;
+  align-items: center;
 }
 .containerfogonasado .contentfogonasado {
-  text-align: center;
+  flex: 1;
+  padding: 10px;
 }
 .containerfogonasado .contentfogonasado p {
-  padding-top: 20%;
-  font-size: 160%;
+  padding-top: 15%;
+  font-size: 260%;
+  text-align: center;
 }
-@media (max-width: 800px) {
-  .containerfogonasado .containerfogonasado {
-    flex-wrap: wrap;
-  }
+.containerfogonasado .imagefogonasado {
+  flex: 1;
+  padding: 10px;
+}
+.containerfogonasado .imagefogonasado img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10%;
 }
 
+@media (max-width: 800px) {
+  .containerfogonasado {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .containerfogonasado .contentfogonasado, .containerfogonasado p {
+    font-size: 40%;
+  }
+  .containerfogonasado .contentfogonasado, .containerfogonasado .imagefogonasado {
+    width: 70%;
+  }
+}
 .galleryfogonasado {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1017,35 +1068,62 @@ hr {
 
 /*LA CABRERA*/
 .lacabrera {
-  font-size: 10vw;
-  text-align: center;
   font-family: "REDRESSED";
-  margin-bottom: 2%;
+  font-size: 15rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .lacabrera {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .lacabrera {
+    font-size: 1.5rem;
+  }
 }
 
 .containerlacabrera {
   display: flex;
-  background-color: #b1b1b1;
   padding: 10px;
-  margin-bottom: 5%;
-}
-.containerlacabrera img {
-  width: 100%;
-  border-radius: 10px;
+  text-align: center;
+  align-items: center;
 }
 .containerlacabrera .contentlacabrera {
-  text-align: center;
+  flex: 1;
+  padding: 10px;
 }
 .containerlacabrera .contentlacabrera p {
-  padding-top: 20%;
-  font-size: 160%;
+  padding: 15%;
+  font-size: 260%;
+  text-align: center;
 }
-@media (max-width: 800px) {
-  .containerlacabrera .containerlacabrera {
-    flex-wrap: wrap;
-  }
+.containerlacabrera .imagelacabrera {
+  flex: 1;
+  padding: 10px;
+}
+.containerlacabrera .imagelacabrera img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10%;
 }
 
+@media (max-width: 800px) {
+  .containerlacabrera {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .containerlacabrera .contentlacabrera, .containerlacabrera p {
+    font-size: 40%;
+  }
+  .containerlacabrera .contentlacabrera, .containerlacabrera .imagelacabrera {
+    width: 70%;
+  }
+}
 .gallerylacabrera {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

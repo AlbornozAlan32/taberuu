@@ -780,11 +780,9 @@ hr {
   /*-----MENU PRINCIPAL CARNES------*/
   .fotoprincipalcarnepg5{
     width: 100%;
-    height: auto;
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
     @media (max-width: 768px) {
       .imagen {
           width: 100%;
@@ -816,7 +814,7 @@ hr {
       padding: 10px;
       
       img{
-        width: 50vw;
+        width: 40vw;
         border-radius: 5%;
       }
     } 
@@ -841,40 +839,63 @@ hr {
       }
   }
   
-
-
-  /*DON JULIO*/
-.donjulio{
-  font-size: 10vw;
-  text-align: center;
+/*DON JULIO 2*/
+.donjulio {
   font-family: "REDRESSED";
-  margin-bottom: 2%;
+  font-size: 15rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+
+  @media (max-width: 768px){
+      font-size: 2rem;
+  }
+  
+  @media (max-width: 576px){
+      font-size: 1.5rem;
+  }
 }
 
 .containerdonjulio {
   display: flex;
-  background-color: #b1b1b1;
   padding: 10px;
-  margin-bottom: 5%;
-  img{
-    width: 100%;
-    border-radius: 10px;
+
+  .contentdonjulio {
+    flex: 1;
+    padding: 10px;
+      p{
+        margin-top: 20%;
+        padding: 10%;
+        font-size: 250%;
+        text-align: center;
+      }
   }
-  .contentdonjulio {    
-    text-align: center;
-    p{  
-      padding-top: 20%;
-      font-size: 160%;
-    }
-    
+
+  .imagedonjulio{
+    flex: 1;
+    padding: 10px;
+      img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 10%;
+      }
+  }
 }
-@media (max-width: 800px){
-  .containerdonjulio{
-    flex-wrap: wrap;
+@media (max-width: 800px) {
+  .containerdonjulio {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      .contentdonjulio, p {
+        font-size: 40%;
+      }
+      .contentdonjulio, .imagedonjulio{
+          width: 70%;
+      }
   }
 }
 
-}
 .gallerydonjulio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -886,37 +907,62 @@ hr {
     border-radius: 10px;
   }
 }
-
 /*FOGON ASADO*/
-.fogonasado{
-  font-size: 10vw;
-  text-align: center;
+.fogonasado {
   font-family: "REDRESSED";
-  margin-bottom: 2%;
-}
-
-.containerfogonasado{
-  display: flex;
-  background-color: #b1b1b1;
+  font-size: 15rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
   padding: 10px;
-  margin-bottom: 5%;
-    img{
-    width: 100%;
-    border-radius: 10px;
-    }
-  .contentfogonasado {    
-    text-align: center;
-    p{  
-      padding-top: 20%;
-      font-size: 160%;
-    }
-    }
-@media (max-width: 800px){
-  .containerfogonasado{
-    flex-wrap: wrap;
+
+  @media (max-width: 768px){
+      font-size: 2rem;
+  }
+  
+  @media (max-width: 576px){
+      font-size: 1.5rem;
   }
 }
 
+.containerfogonasado {
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+
+  .contentfogonasado {
+    flex: 1;
+    padding: 10px;
+      p{
+        padding-top: 15%;
+        font-size: 260%;
+        text-align: center;
+      }
+  }
+
+  .imagefogonasado{
+    flex: 1;
+    padding: 10px;
+      img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 10%;
+      }
+  }
+}
+@media (max-width: 800px) {
+  .containerfogonasado {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      .contentfogonasado, p {
+        font-size: 40%;
+      }
+      .contentfogonasado, .imagefogonasado{
+          width: 70%;
+      }
+  }
 }
 .galleryfogonasado{
   display: grid;
@@ -929,37 +975,64 @@ hr {
     border-radius: 10px;
   }
 }
-
 /*LA CABRERA*/
-.lacabrera{
-  font-size: 10vw;
-  text-align: center;
+.lacabrera {
   font-family: "REDRESSED";
-  margin-bottom: 2%;
-}
-
-.containerlacabrera{
-  display: flex;
-  background-color: #b1b1b1;
+  font-size: 15rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
   padding: 10px;
-  margin-bottom: 5%;
-    img{
-    width: 100%;
-    border-radius: 10px;
-    }
-  .contentlacabrera {    
-    text-align: center;
-    p{  
-      padding-top: 20%;
-      font-size: 160%;
-    }
-    }
-@media (max-width: 800px){
-  .containerlacabrera{
-    flex-wrap: wrap;
+
+  @media (max-width: 768px){
+      font-size: 2rem;
+  }
+  
+  @media (max-width: 576px){
+      font-size: 1.5rem;
   }
 }
 
+.containerlacabrera {
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+
+  .contentlacabrera{
+    flex: 1;
+    padding: 10px;
+      p{
+        padding: 15%;
+        font-size: 260%;
+        text-align: center;
+
+      }
+  }
+
+  .imagelacabrera{
+    flex: 1;
+    padding: 10px;
+      img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 10%;
+
+      }
+  }
+}
+@media (max-width: 800px) {
+  .containerlacabrera {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      .contentlacabrera, p {
+        font-size: 40%;
+      }
+      .contentlacabrera, .imagelacabrera{
+          width: 70%;
+      }
+  }
 }
 .gallerylacabrera{
   display: grid;
@@ -972,15 +1045,6 @@ hr {
     border-radius: 10px;
   }
 }
-
-  
-
-
-
-
-
-
-
 
 /*-------PAGINA 6-------*/
 
