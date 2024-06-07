@@ -93,15 +93,16 @@ nav nav a {
 .footer {
   background-color: #333;
   color: white;
-  padding: 5px;
+  padding-top: 10px;
   text-align: center;
 }
 .footer .social-icons {
   display: flex;
   justify-content: center;
+  padding: 15px;
 }
 .footer .social-icons a {
-  padding: 5px;
+  padding: 2px;
 }
 .footer .social-icons a img {
   width: 40px;
@@ -112,12 +113,12 @@ nav nav a {
 }
 .footer .links {
   display: flex;
-  flex-wrap: wrap;
+  padding: 5px;
 }
 .footer .links a {
   color: white;
   text-decoration: none;
-  margin: 15px;
+  margin: 10px;
 }
 .footer .links a:hover {
   color: orange;

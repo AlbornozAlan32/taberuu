@@ -1,15 +1,16 @@
   .footer {
     background-color: #333;
     color: white;
-    padding: 5px;
+    padding-top: 10px;
     text-align: center;
   
     .social-icons {
       display: flex;
       justify-content: center;
+      padding: 15px;
   
       a {
-        padding: 5px;   
+        padding: 2px;   
         img {
           width: 40px; 
           transition: transform 0.3s;
@@ -22,12 +23,12 @@
   
     .links {
       display: flex;
-      flex-wrap: wrap;
+      padding: 5px;   
 
       a {
         color: white;
         text-decoration: none;
-        margin: 15px;
+        margin: 10px;
         &:hover {
           color: orange;
         }
