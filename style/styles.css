@@ -7,14 +7,38 @@
 6-INCIAR SESION
 7-SOBRE NOSTROS*/
 /*------------------------------*/
-* {
+html body {
+  /*-----FUENTES------*/
+  /*-----MENU DE NAVEGACION-------*/
+  /*-----------PAGINA 1----------- */
+  /*IMAGEN PRINCIPAL*/
+  /*-----MAIN----*/
+  /*---------PAGINA 2----------*/
+  /*-----------PAGINA3---------*/
+  /*-----MENU PRINCIPAL SUSHI------*/
+  /*ICHISOU*/
+  /*OSAKA*/
+  /*TENKUU*/
+  /*-----------PAGINA 4---------*/
+  /*-----MENU PRINCIPAL PIZZA------*/
+  /*EL CUARTITO*/
+  /*LA MEZZETA*/
+  /*GUERRIN*/
+  /*-----------PAGINA 5---------*/
+  /*-----MENU PRINCIPAL CARNES------*/
+  /*DON JULIO 2*/
+  /*FOGON ASADO*/
+  /*LA CABRERA*/
+  /*-------PAGINA 6-------*/
+  /* INCIAR SESION */
+  /*--------PAGINA 7 ---------*/
+}
+html body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
 }
-
-/*-----FUENTES------*/
 @font-face {
   font-family: "SPECTRALSC-REGULAR";
   src: url(../fuentes/SpectralSC-Regular.ttf);
@@ -39,110 +63,117 @@
   font-family: "KANIT";
   src: url(../fuentes/Kanit-Thin.ttf);
 }
-/*-----MENU DE NAVEGACION-------*/
-nav {
+html body nav {
   display: flex;
   background-color: #000000;
   justify-content: space-between;
   align-items: center;
   padding: 2%;
 }
-nav :hover {
+html body nav :hover {
   color: orange;
 }
-nav a {
+html body nav a {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-nav a h2 {
+html body nav a h2 {
   color: rgba(228, 228, 228, 0.8078431373);
   margin-left: 5%;
   font-family: "URBANIST";
   font-size: 300%;
   opacity: 80%;
 }
-nav a img {
+html body nav a img {
   width: 15%;
   margin-right: 2%;
 }
-nav nav {
+html body nav nav {
   display: flex;
 }
-nav nav a {
+html body nav nav a {
   text-decoration: none;
   color: rgba(228, 228, 228, 0.8078431373);
   font-size: 20px;
   opacity: 80%;
 }
-
 @media (max-width: 700px) {
-  .header {
+  html body .header {
     flex-direction: column;
   }
-  .nav {
+  html body .nav {
     padding: 10px 0px;
   }
-  .logo-nombre {
+  html body .logo-nombre {
     font-size: 100%;
   }
-  .nav a {
+  html body .nav a {
     font-size: 80%;
   }
 }
-.footer {
+html body .footer {
   background-color: #333;
   color: white;
   padding-top: 10px;
   text-align: center;
 }
-.footer .social-icons {
+html body .footer .social-icons {
   display: flex;
   justify-content: center;
   padding: 15px;
 }
-.footer .social-icons a {
+html body .footer .social-icons a {
   padding: 2px;
 }
-.footer .social-icons a img {
+html body .footer .social-icons a img {
   width: 40px;
   transition: transform 0.3s;
 }
-.footer .social-icons a img:hover {
+html body .footer .social-icons a img:hover {
   transform: scale(1.5);
 }
-.footer .links {
+html body .footer .links {
   display: flex;
   padding: 5px;
 }
-.footer .links a {
+html body .footer .links a {
   color: white;
   text-decoration: none;
   margin: 10px;
 }
-.footer .links a:hover {
+html body .footer .links a:hover {
   color: orange;
+  transform: scale(1.5);
 }
 @media screen and (max-width: 768px) {
-  .footer .social-icons, .footer .links {
+  html body .footer .social-icons, html body .footer .links {
     flex-direction: column;
   }
-  .footer a {
+  html body .footer a {
     padding: 10px;
     margin: 5px;
   }
-  .footer img {
+  html body .footer img {
     width: 30px;
   }
 }
-.footer .copyright {
+html body .footer .copyright {
   text-align: center;
   padding: 10px 0;
 }
-
-/*-----------PAGINA 1----------- */
-/*IMAGEN PRINCIPAL*/
-.wrap {
+html body hr {
+  width: 80%;
+  height: 7px;
+  background-color: black;
+  margin: 20px auto;
+}
+@media screen and (max-width: 768px) {
+  html body hr {
+    width: 90%;
+  }
+}
+html body .wrap {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -152,30 +183,28 @@ nav nav a {
   background-size: cover;
   background-position: center;
 }
-.wrap .wrap-texto {
+html body .wrap .wrap-texto {
   color: #c7c7c7;
   text-align: center;
 }
-.wrap .wrap-texto .textoimg {
+html body .wrap .wrap-texto .textoimg {
   font-size: 150%;
 }
-.wrap .wrap-texto .taberu {
+html body .wrap .wrap-texto .taberu {
   font-size: 500%;
   color: #c7c7c7;
 }
-
-/*-----MAIN----*/
-section {
+html body section {
   display: flex;
   background-color: #ffffff;
   padding: 3%;
 }
-section .imgrayador {
+html body section .imgrayador {
   margin: 5%;
   width: 50%;
   flex: 50%;
 }
-section article {
+html body section article {
   background-color: #e2e2e2;
   justify-content: center;
   text-align: center;
@@ -186,68 +215,65 @@ section article {
   margin-left: 5%;
   margin-right: 5%;
 }
-section article h1 {
+html body section article h1 {
   font-size: 150%;
   font-weight: bold;
   color: rgb(71, 71, 71);
 }
-section article p {
+html body section article p {
   font-size: 100%;
   color: #858585;
   font-weight: bold;
 }
-
-.flex-container2pg1 {
+html body .flex-container2pg1 {
   display: flex;
   text-align: center;
   margin-bottom: 2%;
 }
-.flex-container2pg1 .flexpg1-item-left {
+html body .flex-container2pg1 .flexpg1-item-left {
   padding: 3%;
   flex: 40%;
   width: 60vw;
   height: 100vh;
 }
-.flex-container2pg1 .flexpg1-item-right {
+html body .flex-container2pg1 .flexpg1-item-right {
   padding: 3%;
   flex: 40%;
   width: 60VW;
   height: 100vh;
 }
-
 @media (max-width: 700px) {
-  .flex-container1pg1 {
+  html body .flex-container1pg1 {
     flex-direction: column;
   }
-  .flex-container1pg1 > section p {
+  html body .flex-container1pg1 > section p {
     font-size: 50%;
   }
-  .flex-container1pg1 > .section1p1 h1 {
+  html body .flex-container1pg1 > .section1p1 h1 {
     font-size: 100%;
   }
-  .flex-container2pg1 {
+  html body .flex-container2pg1 {
     flex-direction: column;
   }
-  .flexpg1-item-left {
+  html body .flexpg1-item-left {
     width: 100%;
   }
-  .flexpg1-item-right {
+  html body .flexpg1-item-right {
     width: 100%;
   }
 }
-/*---------PAGINA 2----------*/
-.rowpagina2 {
+html body .rowpagina2 {
   display: flex;
   color: #c7c7c7;
 }
-.rowpagina2 .buttonpg2 {
+html body .rowpagina2 .buttonpg2 {
   background-color: none;
   color: rgb(161, 161, 161);
   border: 2px solid #e7e7e7;
   padding: 2%;
   border-radius: 10px;
 }
-.rowpagina2 .column1pagina2 {
+html body .rowpagina2 .column1pagina2 {
   flex: 33%;
   background-image: url(../imagenes/fotosushipagina2.jpg);
   height: 100vh;
@@ -258,11 +284,11 @@ section article p {
   text-align: center;
   padding-top: 10%;
 }
-.rowpagina2 .column1pagina2 h1 {
+html body .rowpagina2 .column1pagina2 h1 {
   font-size: 400%;
   font-family: "SPECTRALSC-REGULAR";
 }
-.rowpagina2 .column2pagina2 {
+html body .rowpagina2 .column2pagina2 {
   flex: 33%;
   background-image: url(../imagenes/fotopizzapagina2.jpg);
   height: 100vh;
@@ -273,11 +299,11 @@ section article p {
   text-align: center;
   padding-top: 10%;
 }
-.rowpagina2 .column2pagina2 h1 {
+html body .rowpagina2 .column2pagina2 h1 {
   font-size: 400%;
   font-family: "SPECTRALSC-REGULAR";
 }
-.rowpagina2 .column3pagina2 {
+html body .rowpagina2 .column3pagina2 {
   flex: 33%;
   background-image: url(../imagenes/fotocarnepagina2.jpg);
   height: 100vh;
@@ -288,28 +314,25 @@ section article p {
   text-align: center;
   padding-top: 10%;
 }
-.rowpagina2 .column3pagina2 h1 {
+html body .rowpagina2 .column3pagina2 h1 {
   font-size: 400%;
   font-family: "SPECTRALSC-REGULAR";
 }
-
 @media (max-width: 700px) {
-  .rowpagina2 {
+  html body .rowpagina2 {
     flex-wrap: wrap;
   }
-  .column1pagina2 {
+  html body .column1pagina2 {
     flex: 100%;
   }
-  .column2pagina2 {
+  html body .column2pagina2 {
     flex: 100%;
   }
-  .column3pagina2 {
+  html body .column3pagina2 {
     flex: 100%;
   }
 }
-/*-----------PAGINA3---------*/
-/*-----MENU PRINCIPAL SUSHI------*/
-.fotoprincipalsushipg3 {
+html body .fotoprincipalsushipg3 {
   width: 100%;
   height: auto;
   display: block;
@@ -318,75 +341,60 @@ section article p {
   margin-bottom: 20px;
 }
 @media (max-width: 768px) {
-  .fotoprincipalsushipg3 .imagen {
+  html body .fotoprincipalsushipg3 .imagen {
     width: 100%;
     height: auto;
   }
 }
-
-.flex-informacionsushipg3 {
+html body .flex-informacionsushipg3 {
   display: flex;
   align-items: center;
 }
-.flex-informacionsushipg3 .textosushipg3 {
+html body .flex-informacionsushipg3 .textosushipg3 {
   padding: 50px;
   align-items: center;
   text-align: center;
   flex: 50%;
 }
-.flex-informacionsushipg3 .textosushipg3 h1 {
+html body .flex-informacionsushipg3 .textosushipg3 h1 {
   padding: 10px;
   font-size: 10vw;
 }
-.flex-informacionsushipg3 .textosushipg3 p {
+html body .flex-informacionsushipg3 .textosushipg3 p {
   padding: 10px;
   font-size: 1.3vw;
 }
-.flex-informacionsushipg3 .fotoprincipal2sushipg3 {
+html body .flex-informacionsushipg3 .fotoprincipal2sushipg3 {
   flex: 50%;
   padding: 10px;
 }
-.flex-informacionsushipg3 .fotoprincipal2sushipg3 img {
+html body .flex-informacionsushipg3 .fotoprincipal2sushipg3 img {
   width: 50%;
   border-radius: 5%;
 }
 @media (max-width: 800px) {
-  .flex-informacionsushipg3 .flex-informacionsushipg3 {
+  html body .flex-informacionsushipg3 .flex-informacionsushipg3 {
     flex-direction: column;
   }
-  .flex-informacionsushipg3 .textosushipg3 {
+  html body .flex-informacionsushipg3 .textosushipg3 {
     flex: 100%;
     margin-bottom: 3%;
     padding: 0%;
   }
-  .flex-informacionsushipg3 .textosushipg3 > h1 {
+  html body .flex-informacionsushipg3 .textosushipg3 > h1 {
     font-size: 50vw;
   }
-  .flex-informacionsushipg3 .textosushipg3 > p {
+  html body .flex-informacionsushipg3 .textosushipg3 > p {
     font-size: 10vw;
   }
-  .flex-informacionsushipg3 .fotoprincipal2sushipg3 {
+  html body .flex-informacionsushipg3 .fotoprincipal2sushipg3 {
     flex: 50%;
   }
-  .flex-informacionsushipg3 .fotoprincipal2sushipg3, .flex-informacionsushipg3 img {
+  html body .flex-informacionsushipg3 .fotoprincipal2sushipg3, html body .flex-informacionsushipg3 img {
     width: 50px;
   }
 }
-
-hr {
-  width: 80%;
-  height: 7px;
-  background-color: black;
-  margin: 20px auto;
-}
-@media screen and (max-width: 768px) {
-  hr {
-    width: 90%;
-  }
-}
-
-/*ICHISOU*/
-.ichisou {
+html body .ichisou {
   font-family: "Kanit", sans-serif;
   font-size: 12rem;
   color: #333;
@@ -395,66 +403,62 @@ hr {
   padding: 10px;
 }
 @media (max-width: 768px) {
-  .ichisou {
+  html body .ichisou {
     font-size: 2rem;
   }
 }
 @media (max-width: 576px) {
-  .ichisou {
+  html body .ichisou {
     font-size: 1.5rem;
   }
 }
-
-.containerichisou {
+html body .containerichisou {
   display: flex;
   padding: 10px;
 }
-.containerichisou .contentichisou {
+html body .containerichisou .contentichisou {
   flex: 1;
   padding: 10px;
 }
-.containerichisou .contentichisou p {
+html body .containerichisou .contentichisou p {
   padding-top: 15%;
   font-size: 245%;
 }
-.containerichisou .imageichisou {
+html body .containerichisou .imageichisou {
   flex: 1;
   padding: 10px;
 }
-.containerichisou .imageichisou img {
+html body .containerichisou .imageichisou img {
   max-width: 90%;
   height: auto;
   border-radius: 8%;
 }
-
 @media (max-width: 700px) {
-  .containerichisou {
+  html body .containerichisou {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  .containerichisou .contentichisou, .containerichisou p {
+  html body .containerichisou .contentichisou, html body .containerichisou p {
     font-size: 40%;
   }
-  .containerichisou .contentichisou, .containerichisou .imageichisou {
+  html body .containerichisou .contentichisou, html body .containerichisou .imageichisou {
     width: 80%;
   }
 }
-.galleryichisou {
+html body .galleryichisou {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.galleryichisou img {
+html body .galleryichisou img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-
-/*OSAKA*/
-.osaka {
+html body .osaka {
   font-family: "Kanit", sans-serif;
   font-size: 20rem;
   color: #333;
@@ -463,66 +467,62 @@ hr {
   padding: 10px;
 }
 @media (max-width: 768px) {
-  .osaka {
+  html body .osaka {
     font-size: 2rem;
   }
 }
 @media (max-width: 576px) {
-  .osaka {
+  html body .osaka {
     font-size: 1.5rem;
   }
 }
-
-.containerosaka {
+html body .containerosaka {
   display: flex;
   padding: 10px;
 }
-.containerosaka .contentosaka {
+html body .containerosaka .contentosaka {
   flex: 1;
   padding: 10px;
 }
-.containerosaka .contentosaka p {
+html body .containerosaka .contentosaka p {
   padding-top: 15%;
   font-size: 200%;
 }
-.containerosaka .imageosaka {
+html body .containerosaka .imageosaka {
   flex: 1;
   padding: 10px;
 }
-.containerosaka .imageosaka img {
+html body .containerosaka .imageosaka img {
   max-width: 90%;
   height: auto;
   border-radius: 10%;
 }
-
 @media (max-width: 800px) {
-  .containerosaka {
+  html body .containerosaka {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  .containerosaka .contentosaka, .containerosaka p {
+  html body .containerosaka .contentosaka, html body .containerosaka p {
     font-size: 40%;
   }
-  .containerosaka .contentosaka, .containerosaka .imageosaka {
+  html body .containerosaka .contentosaka, html body .containerosaka .imageosaka {
     width: 70%;
   }
 }
-.galleryosaka {
+html body .galleryosaka {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.galleryosaka img {
+html body .galleryosaka img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-
-/*TENKUU*/
-.tenkuu {
+html body .tenkuu {
   font-family: "Kanit", sans-serif;
   font-size: 12rem;
   color: #333;
@@ -531,68 +531,63 @@ hr {
   padding: 10px;
 }
 @media (max-width: 768px) {
-  .tenkuu {
+  html body .tenkuu {
     font-size: 2rem;
   }
 }
 @media (max-width: 576px) {
-  .tenkuu {
+  html body .tenkuu {
     font-size: 1.5rem;
   }
 }
-
-.containertenkuu {
+html body .containertenkuu {
   display: flex;
   padding: 10px;
 }
-.containertenkuu .contenttenkuu {
+html body .containertenkuu .contenttenkuu {
   flex: 1;
   padding: 10px;
 }
-.containertenkuu .contenttenkuu p {
+html body .containertenkuu .contenttenkuu p {
   padding-top: 15%;
   font-size: 245%;
 }
-.containertenkuu .imagetenkuu {
+html body .containertenkuu .imagetenkuu {
   flex: 1;
   padding: 10px;
 }
-.containertenkuu .imagetenkuu img {
+html body .containertenkuu .imagetenkuu img {
   max-width: 90%;
   height: auto;
   border-radius: 8%;
 }
-
 @media (max-width: 700px) {
-  .containertenkuu {
+  html body .containertenkuu {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  .containertenkuu .contenttenkuu, .containertenkuu p {
+  html body .containertenkuu .contenttenkuu, html body .containertenkuu p {
     font-size: 40%;
   }
-  .containertenkuu .contenttenkuu, .containertenkuu .imagetenkuu {
+  html body .containertenkuu .contenttenkuu, html body .containertenkuu .imagetenkuu {
     width: 80%;
   }
 }
-.gallerytenkuu {
+html body .gallerytenkuu {
   margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.gallerytenkuu img {
+html body .gallerytenkuu img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-
-/*-----------PAGINA 4---------*/
-/*-----MENU PRINCIPAL PIZZA------*/
-.fotoprincipalpizzapg4 {
+html body .fotoprincipalpizzapg4 {
   width: 100%;
   height: auto;
   display: block;
@@ -601,71 +596,67 @@ hr {
   margin-bottom: 20px;
 }
 @media (max-width: 768px) {
-  .fotoprincipalpizzapg4 .imagen {
+  html body .fotoprincipalpizzapg4 .imagen {
     width: 100%;
     height: auto;
   }
 }
-
-.flex-informacionpizzapg4 {
+html body .flex-informacionpizzapg4 {
   display: flex;
   align-items: center;
 }
-.flex-informacionpizzapg4 .textopizzapg4 {
+html body .flex-informacionpizzapg4 .textopizzapg4 {
   padding: 50px;
   align-items: center;
   text-align: center;
   flex: 50%;
 }
-.flex-informacionpizzapg4 .textopizzapg4 h1 {
+html body .flex-informacionpizzapg4 .textopizzapg4 h1 {
   padding: 10px;
   font-size: 10vw;
 }
-.flex-informacionpizzapg4 .textopizzapg4 p {
+html body .flex-informacionpizzapg4 .textopizzapg4 p {
   padding: 10px;
   font-size: 1.3vw;
 }
-.flex-informacionpizzapg4 .fotoprincipal2pizzapg4 {
+html body .flex-informacionpizzapg4 .fotoprincipal2pizzapg4 {
   flex: 50%;
   padding: 10px;
 }
-.flex-informacionpizzapg4 .fotoprincipal2pizzapg4 img {
+html body .flex-informacionpizzapg4 .fotoprincipal2pizzapg4 img {
   width: 50vw;
   border-radius: 5%;
 }
 @media (max-width: 700px) {
-  .flex-informacionpizzapg4 .flex-informacionpizzapg4 {
+  html body .flex-informacionpizzapg4 .flex-informacionpizzapg4 {
     flex-wrap: wrap;
   }
-  .flex-informacionpizzapg4 .textopizzapg4 {
+  html body .flex-informacionpizzapg4 .textopizzapg4 {
     flex: 100%;
     margin-bottom: 3%;
   }
-  .flex-informacionpizzapg4 .textopizzapg4 > h1 {
+  html body .flex-informacionpizzapg4 .textopizzapg4 > h1 {
     font-size: 50vw;
   }
-  .flex-informacionpizzapg4 .textopizzapg4 > p {
+  html body .flex-informacionpizzapg4 .textopizzapg4 > p {
     font-size: 10vw;
   }
-  .flex-informacionpizzapg4 .fotoprincipalpizzapg4 {
+  html body .flex-informacionpizzapg4 .fotoprincipalpizzapg4 {
     flex: 100%;
   }
 }
-
-hr {
+html body hr {
   width: 80%;
   height: 7px;
   background-color: black;
   margin: 20px auto;
 }
 @media screen and (max-width: 700px) {
-  hr {
+  html body hr {
     width: 90%;
   }
 }
-
-/*EL CUARTITO*/
-.elcuartito {
+html body .elcuartito {
   font-family: "REDRESSED";
   font-size: 15rem;
   color: #333;
@@ -674,68 +665,64 @@ hr {
   padding: 10px;
 }
 @media (max-width: 768px) {
-  .elcuartito {
+  html body .elcuartito {
     font-size: 2rem;
   }
 }
 @media (max-width: 576px) {
-  .elcuartito {
+  html body .elcuartito {
     font-size: 1.5rem;
   }
 }
-
-.containerelcuartito {
+html body .containerelcuartito {
   display: flex;
   padding: 10px;
   align-items: center;
   text-align: center;
 }
-.containerelcuartito .contentelcuartito {
+html body .containerelcuartito .contentelcuartito {
   flex: 1;
   padding: 10px;
 }
-.containerelcuartito .contentelcuartito p {
+html body .containerelcuartito .contentelcuartito p {
   padding-top: 15%;
   font-size: 160%;
 }
-.containerelcuartito .imagecuartito {
+html body .containerelcuartito .imagecuartito {
   flex: 1;
   padding: 10px;
 }
-.containerelcuartito .imagecuartito img {
+html body .containerelcuartito .imagecuartito img {
   max-width: 90%;
   height: auto;
   border-radius: 10%;
 }
-
 @media (max-width: 800px) {
-  .containerelcuartito {
+  html body .containerelcuartito {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  .containerelcuartito .contentelcuartito, .containerelcuartito p {
+  html body .containerelcuartito .contentelcuartito, html body .containerelcuartito p {
     font-size: 40%;
   }
-  .containerelcuartito .contentelcuartito, .containerelcuartito .imagecuartito {
+  html body .containerelcuartito .contentelcuartito, html body .containerelcuartito .imagecuartito {
     width: 70%;
   }
 }
-.galleryelcuartito {
+html body .galleryelcuartito {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.galleryelcuartito img {
+html body .galleryelcuartito img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-
-/*LA MEZZETA*/
-.lamezzeta {
+html body .lamezzeta {
   font-family: "REDRESSED";
   font-size: 15rem;
   color: #333;
@@ -744,68 +731,64 @@ hr {
   padding: 10px;
 }
 @media (max-width: 768px) {
-  .lamezzeta {
+  html body .lamezzeta {
     font-size: 2rem;
   }
 }
 @media (max-width: 576px) {
-  .lamezzeta {
+  html body .lamezzeta {
     font-size: 1.5rem;
   }
 }
-
-.containerlamezzeta {
+html body .containerlamezzeta {
   display: flex;
   padding: 10px;
   align-items: center;
   text-align: center;
 }
-.containerlamezzeta .contentlamezzeta {
+html body .containerlamezzeta .contentlamezzeta {
   flex: 1;
   padding: 10px;
 }
-.containerlamezzeta .contentlamezzeta p {
+html body .containerlamezzeta .contentlamezzeta p {
   padding-top: 15%;
   font-size: 160%;
 }
-.containerlamezzeta .imagelamezzeta {
+html body .containerlamezzeta .imagelamezzeta {
   flex: 1;
   padding: 10px;
 }
-.containerlamezzeta .imagelamezzeta img {
+html body .containerlamezzeta .imagelamezzeta img {
   max-width: 90%;
   height: auto;
   border-radius: 10%;
 }
-
 @media (max-width: 800px) {
-  .containerlamezzeta {
+  html body .containerlamezzeta {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  .containerlamezzeta .contentlamezzeta, .containerlamezzeta p {
+  html body .containerlamezzeta .contentlamezzeta, html body .containerlamezzeta p {
     font-size: 40%;
   }
-  .containerlamezzeta .contentlamezzeta, .containerlamezzeta .imagelamezzeta {
+  html body .containerlamezzeta .contentlamezzeta, html body .containerlamezzeta .imagelamezzeta {
     width: 70%;
   }
 }
-.gallerylamezzeta {
+html body .gallerylamezzeta {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.gallerylamezzeta img {
+html body .gallerylamezzeta img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-
-/*GUERRIN*/
-.guerrin {
+html body .guerrin {
   font-family: "REDRESSED";
   font-size: 15rem;
   color: #333;
@@ -814,126 +797,118 @@ hr {
   padding: 10px;
 }
 @media (max-width: 768px) {
-  .guerrin {
+  html body .guerrin {
     font-size: 2rem;
   }
 }
 @media (max-width: 576px) {
-  .guerrin {
+  html body .guerrin {
     font-size: 1.5rem;
   }
 }
-
-.containerguerrin {
+html body .containerguerrin {
   display: flex;
   padding: 10px;
 }
-.containerguerrin .contentguerrin {
+html body .containerguerrin .contentguerrin {
   flex: 1;
   padding: 10px;
 }
-.containerguerrin .contentguerrin p {
+html body .containerguerrin .contentguerrin p {
   padding-top: 15%;
   font-size: 200%;
 }
-.containerguerrin .imageguerrin {
+html body .containerguerrin .imageguerrin {
   flex: 1;
   padding: 10px;
 }
-.containerguerrin .imageguerrin img {
+html body .containerguerrin .imageguerrin img {
   max-width: 80%;
   height: auto;
   border-radius: 10%;
 }
-
 @media (max-width: 800px) {
-  .containerguerrin {
+  html body .containerguerrin {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  .containerguerrin .contentguerrin, .containerguerrin p {
+  html body .containerguerrin .contentguerrin, html body .containerguerrin p {
     font-size: 40%;
   }
-  .containerguerrin .contentguerrin, .containerguerrin .imageguerrin {
+  html body .containerguerrin .contentguerrin, html body .containerguerrin .imageguerrin {
     width: 65%;
   }
 }
-.galleryguerrin {
+html body .galleryguerrin {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.galleryguerrin img {
+html body .galleryguerrin img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-
-/*-----------PAGINA 5---------*/
-/*-----MENU PRINCIPAL CARNES------*/
-.fotoprincipalcarnepg5 {
+html body .fotoprincipalcarnepg5 {
   width: 100%;
   margin-bottom: 30px;
   text-align: center;
   align-items: center;
 }
 @media (max-width: 768px) {
-  .fotoprincipalcarnepg5 .imagen {
+  html body .fotoprincipalcarnepg5 .imagen {
     width: 100%;
     height: auto;
   }
 }
-
-.flex-informacioncarnepg5 {
+html body .flex-informacioncarnepg5 {
   display: flex;
   align-items: center;
 }
-.flex-informacioncarnepg5 .textocarnepg5 {
+html body .flex-informacioncarnepg5 .textocarnepg5 {
   padding: 50px;
   align-items: center;
   text-align: center;
   flex: 50%;
 }
-.flex-informacioncarnepg5 .textocarnepg5 h1 {
+html body .flex-informacioncarnepg5 .textocarnepg5 h1 {
   padding: 10px;
   font-size: 10vw;
 }
-.flex-informacioncarnepg5 .textocarnepg5 p {
+html body .flex-informacioncarnepg5 .textocarnepg5 p {
   padding: 10px;
   font-size: 1.3vw;
 }
-.flex-informacioncarnepg5 .fotoprincipal2carnepg5 {
+html body .flex-informacioncarnepg5 .fotoprincipal2carnepg5 {
   flex: 50%;
   padding: 10px;
 }
-.flex-informacioncarnepg5 .fotoprincipal2carnepg5 img {
+html body .flex-informacioncarnepg5 .fotoprincipal2carnepg5 img {
   width: 40vw;
   border-radius: 5%;
 }
 @media (max-width: 700px) {
-  .flex-informacioncarnepg5 .flex-informacioncarnepg5 {
+  html body .flex-informacioncarnepg5 .flex-informacioncarnepg5 {
     flex-wrap: wrap;
   }
-  .flex-informacioncarnepg5 .textocarnepg5 {
+  html body .flex-informacioncarnepg5 .textocarnepg5 {
     flex: 100%;
     margin-bottom: 3%;
   }
-  .flex-informacioncarnepg5 .textocarnepg5 > h1 {
+  html body .flex-informacioncarnepg5 .textocarnepg5 > h1 {
     font-size: 50vw;
   }
-  .flex-informacioncarnepg5 .textocarnepg5 > p {
+  html body .flex-informacioncarnepg5 .textocarnepg5 > p {
     font-size: 10vw;
   }
-  .flex-informacioncarnepg5 .fotoprincipalcarnepg5 {
+  html body .flex-informacioncarnepg5 .fotoprincipalcarnepg5 {
     flex: 100%;
   }
 }
-
-/*DON JULIO 2*/
-.donjulio {
+html body .donjulio {
   font-family: "REDRESSED";
   font-size: 15rem;
   color: #333;
@@ -942,68 +917,64 @@ hr {
   padding: 10px;
 }
 @media (max-width: 768px) {
-  .donjulio {
+  html body .donjulio {
     font-size: 2rem;
   }
 }
 @media (max-width: 576px) {
-  .donjulio {
+  html body .donjulio {
     font-size: 1.5rem;
   }
 }
-
-.containerdonjulio {
+html body .containerdonjulio {
   display: flex;
   padding: 10px;
 }
-.containerdonjulio .contentdonjulio {
+html body .containerdonjulio .contentdonjulio {
   flex: 1;
   padding: 10px;
 }
-.containerdonjulio .contentdonjulio p {
+html body .containerdonjulio .contentdonjulio p {
   margin-top: 20%;
   padding: 10%;
   font-size: 250%;
   text-align: center;
 }
-.containerdonjulio .imagedonjulio {
+html body .containerdonjulio .imagedonjulio {
   flex: 1;
   padding: 10px;
 }
-.containerdonjulio .imagedonjulio img {
+html body .containerdonjulio .imagedonjulio img {
   max-width: 90%;
   height: auto;
   border-radius: 10%;
 }
-
 @media (max-width: 800px) {
-  .containerdonjulio {
+  html body .containerdonjulio {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  .containerdonjulio .contentdonjulio, .containerdonjulio p {
+  html body .containerdonjulio .contentdonjulio, html body .containerdonjulio p {
     font-size: 40%;
   }
-  .containerdonjulio .contentdonjulio, .containerdonjulio .imagedonjulio {
+  html body .containerdonjulio .contentdonjulio, html body .containerdonjulio .imagedonjulio {
     width: 70%;
   }
 }
-.gallerydonjulio {
+html body .gallerydonjulio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.gallerydonjulio img {
+html body .gallerydonjulio img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-
-/*FOGON ASADO*/
-.fogonasado {
+html body .fogonasado {
   font-family: "REDRESSED";
   font-size: 15rem;
   color: #333;
@@ -1012,69 +983,65 @@ hr {
   padding: 10px;
 }
 @media (max-width: 768px) {
-  .fogonasado {
+  html body .fogonasado {
     font-size: 2rem;
   }
 }
 @media (max-width: 576px) {
-  .fogonasado {
+  html body .fogonasado {
     font-size: 1.5rem;
   }
 }
-
-.containerfogonasado {
+html body .containerfogonasado {
   display: flex;
   padding: 10px;
   text-align: center;
   align-items: center;
 }
-.containerfogonasado .contentfogonasado {
+html body .containerfogonasado .contentfogonasado {
   flex: 1;
   padding: 10px;
 }
-.containerfogonasado .contentfogonasado p {
+html body .containerfogonasado .contentfogonasado p {
   padding-top: 15%;
   font-size: 260%;
   text-align: center;
 }
-.containerfogonasado .imagefogonasado {
+html body .containerfogonasado .imagefogonasado {
   flex: 1;
   padding: 10px;
 }
-.containerfogonasado .imagefogonasado img {
+html body .containerfogonasado .imagefogonasado img {
   max-width: 90%;
   height: auto;
   border-radius: 10%;
 }
-
 @media (max-width: 800px) {
-  .containerfogonasado {
+  html body .containerfogonasado {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  .containerfogonasado .contentfogonasado, .containerfogonasado p {
+  html body .containerfogonasado .contentfogonasado, html body .containerfogonasado p {
     font-size: 40%;
   }
-  .containerfogonasado .contentfogonasado, .containerfogonasado .imagefogonasado {
+  html body .containerfogonasado .contentfogonasado, html body .containerfogonasado .imagefogonasado {
     width: 70%;
   }
 }
-.galleryfogonasado {
+html body .galleryfogonasado {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.galleryfogonasado img {
+html body .galleryfogonasado img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-
-/*LA CABRERA*/
-.lacabrera {
+html body .lacabrera {
   font-family: "REDRESSED";
   font-size: 15rem;
   color: #333;
@@ -1083,70 +1050,65 @@ hr {
   padding: 10px;
 }
 @media (max-width: 768px) {
-  .lacabrera {
+  html body .lacabrera {
     font-size: 2rem;
   }
 }
 @media (max-width: 576px) {
-  .lacabrera {
+  html body .lacabrera {
     font-size: 1.5rem;
   }
 }
-
-.containerlacabrera {
+html body .containerlacabrera {
   display: flex;
   padding: 10px;
   text-align: center;
   align-items: center;
 }
-.containerlacabrera .contentlacabrera {
+html body .containerlacabrera .contentlacabrera {
   flex: 1;
   padding: 10px;
 }
-.containerlacabrera .contentlacabrera p {
+html body .containerlacabrera .contentlacabrera p {
   padding: 15%;
   font-size: 150%;
   text-align: center;
 }
-.containerlacabrera .imagelacabrera {
+html body .containerlacabrera .imagelacabrera {
   flex: 1;
   padding: 10px;
 }
-.containerlacabrera .imagelacabrera img {
+html body .containerlacabrera .imagelacabrera img {
   max-width: 90%;
   height: auto;
   border-radius: 10%;
 }
-
 @media (max-width: 800px) {
-  .containerlacabrera {
+  html body .containerlacabrera {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  .containerlacabrera .contentlacabrera, .containerlacabrera p {
+  html body .containerlacabrera .contentlacabrera, html body .containerlacabrera p {
     font-size: 40%;
   }
-  .containerlacabrera .contentlacabrera, .containerlacabrera .imagelacabrera {
+  html body .containerlacabrera .contentlacabrera, html body .containerlacabrera .imagelacabrera {
     width: 70%;
   }
 }
-.gallerylacabrera {
+html body .gallerylacabrera {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.gallerylacabrera img {
+html body .gallerylacabrera img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-
-/*-------PAGINA 6-------*/
-/* INCIAR SESION */
-.imagenfondopg7 {
+html body .imagenfondopg7 {
   width: 99vw;
   height: 100vh;
   align-items: center;
@@ -1156,8 +1118,7 @@ hr {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
-.login-container {
+html body .login-container {
   max-width: 300px;
   margin: 100px auto;
   padding: 20px;
@@ -1165,18 +1126,18 @@ hr {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.login-container h2 {
+html body .login-container h2 {
   margin-bottom: 20px;
   color: white;
 }
-.login-container input {
+html body .login-container input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-.login-container button {
+html body .login-container button {
   width: 100%;
   padding: 10px;
   background-color: #007bff;
@@ -1185,29 +1146,27 @@ hr {
   border-radius: 3px;
   cursor: pointer;
 }
-
 @media (max-width: 768px) {
-  .login-container {
+  html body .login-container {
     width: 80%;
   }
 }
-/*--------PAGINA 7 ---------*/
-.sobrenosotros {
+html body .sobrenosotros {
   text-align: center;
   background: #000000;
   color: #a3a3a3;
   padding: 5% 10% 5% 10%;
   font-family: "URBANIST";
 }
-.sobrenosotros .sobrenosotros1 {
+html body .sobrenosotros .sobrenosotros1 {
   font-size: 3rem;
 }
-.sobrenosotros p {
+html body .sobrenosotros p {
   font-size: 1.7rem;
   line-height: 3rem;
   font-family: "URBANIST";
 }
-.sobrenosotros .btn {
+html body .sobrenosotros .btn {
   display: inline-block;
   padding: 10px 10px;
   background-color: #6e9dbd;
@@ -1217,6 +1176,6 @@ hr {
   border-radius: 10px;
   transition: background-color 0.3s;
 }
-.sobrenosotros .btn:hover {
+html body .sobrenosotros .btn:hover {
   background-color: #2980b9;
 }/*# sourceMappingURL=styles.css.map */

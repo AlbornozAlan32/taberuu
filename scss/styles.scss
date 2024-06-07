@@ -10,6 +10,10 @@
 
 
   /*------------------------------*/
+  html{
+    body{
+
+   
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +26,17 @@
 @import "footer";
 
 
+hr {
+  width: 80%;
+  height: 7px;
+  background-color: black;
+  margin: 20px auto; 
+  
+  @media screen and (max-width: 768px) {
+    width: 90%; 
+    
+  }
+}
 
 /*-----------PAGINA 1----------- */
 
@@ -281,16 +296,6 @@ section {
   }
   
 
-hr {
-  width: 80%;
-  height: 7px;
-  background-color: black;
-  margin: 20px auto; 
-  
-  @media screen and (max-width: 768px) {
-    width: 90%; // Cambia el ancho de la línea para pantallas más pequeñas
-  }
-}
 
 /*ICHISOU*/
 
@@ -1135,4 +1140,8 @@ hr {
   .btn:hover {
     background-color: #2980b9;
   }
+}
+
+
+}
 }
