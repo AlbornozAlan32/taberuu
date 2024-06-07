@@ -90,60 +90,11 @@ nav nav a {
     font-size: 80%;
   }
 }
-/*--------footer-------
-
-footer {
-  background-color: rgba(0, 0, 0, 0.247); 
-  padding: 10px;  
-  .arrowupcircle{
-    position: fixed;
-    bottom: 2%;
-    right: 2%;
-    width: 50px;
-  }
-  p{
-    text-align: center;
-    padding-top: 2%;
-    font-weight: bold;
-  }
-  .footer1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .footer2{
-      color: #535353; 
-      transition: color 0.3s;
-      margin-left: 10%;
-      & :hover {
-        color: orange; 
-        cursor: pointer;
-      }
-      a{
-        padding-right: 50px;
-        text-decoration: none;
-        color: #000000;
-        font-weight: bold;
-        font-size: 20px;
-      }
-
-    }
-    .footer3{
-      margin-left: 30%;
-      a{
-        margin-right: 20px;         
-      }
-      img{
-        width: 40px;
-        }
-      }
-    }    
-  }
-  --------*/
+/*--------footer-------*/
 .footer {
   background-color: #333;
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 .footer .social-icons {
