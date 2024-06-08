@@ -1,0 +1,42 @@
+.containerindex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  
+    .contentindex, .image {
+      width: 45%;
+  
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  
+    .contentindex {
+      padding: 10px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  
+    .imageindex {
+      width: 50%;
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+  
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+  
+        img {
+          width: 50%;
+          height: auto;
+        }
+      }
+    }
+  }

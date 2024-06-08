@@ -170,6 +170,46 @@ html body .footer .copyright {
   text-align: center;
   padding: 10px 0;
 }
+html body .containerindex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+@media only screen and (max-width: 768px) {
+  html body .containerindex {
+    flex-direction: column;
+  }
+}
+html body .containerindex .contentindex, html body .containerindex .image {
+  width: 45%;
+}
+@media only screen and (max-width: 768px) {
+  html body .containerindex .contentindex, html body .containerindex .image {
+    width: 100%;
+  }
+}
+html body .containerindex .contentindex {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+html body .containerindex .imageindex {
+  width: 50%;
+}
+html body .containerindex .imageindex img {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  html body .containerindex .imageindex {
+    width: 100%;
+  }
+  html body .containerindex .imageindex img {
+    width: 50%;
+    height: auto;
+  }
+}
 html body hr {
   width: 80%;
   height: 7px;
