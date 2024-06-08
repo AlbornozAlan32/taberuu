@@ -112,6 +112,9 @@ html body nav nav a {
     font-size: 80%;
   }
 }
+html body .navbar-nav .nav-link {
+  color: white;
+}
 html body .footer {
   background-color: #333;
   color: white;
@@ -127,17 +130,17 @@ html body .footer .arrowupcircle {
 html body .footer .social-icons {
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 10px;
 }
 html body .footer .social-icons a {
-  padding: 2px;
+  padding: 1px;
 }
 html body .footer .social-icons a img {
-  width: 40px;
+  width: 30px;
   transition: transform 0.3s;
 }
 html body .footer .social-icons a img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 html body .footer .links {
   display: flex;
