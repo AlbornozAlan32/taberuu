@@ -34,9 +34,31 @@
         width: 100%;
   
         img {
-          width: 50%;
+          width: 80%;
           height: auto;
         }
       }
     }
   }
+ 
+  $border-radius: 10px;
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  padding: 10px;
+  
+  video {
+    max-width: 80%;
+    height: auto;
+    border-radius: $border-radius;
+  }
+  
+  @media (max-width: 768px) {
+    video {
+      border-radius: $border-radius;
+    }
+  }
+}

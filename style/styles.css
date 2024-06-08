@@ -205,8 +205,25 @@ html body .containerindex .imageindex img {
     width: 100%;
   }
   html body .containerindex .imageindex img {
-    width: 50%;
+    width: 80%;
     height: auto;
+  }
+}
+html body .video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  padding: 10px;
+}
+html body .video-container video {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  html body .video-container video {
+    border-radius: 10px;
   }
 }
 html body hr {
