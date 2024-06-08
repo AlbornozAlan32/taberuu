@@ -118,6 +118,12 @@ html body .footer {
   padding-top: 10px;
   text-align: center;
 }
+html body .footer .arrowupcircle {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  width: 50px;
+}
 html body .footer .social-icons {
   display: flex;
   justify-content: center;
@@ -144,7 +150,6 @@ html body .footer .links a {
 }
 html body .footer .links a:hover {
   color: orange;
-  transform: scale(1.5);
 }
 @media screen and (max-width: 768px) {
   html body .footer .social-icons, html body .footer .links {
@@ -242,7 +247,7 @@ html body .flex-container2pg1 .flexpg1-item-right {
   width: 60VW;
   height: 100vh;
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   html body .flex-container1pg1 {
     flex-direction: column;
   }
@@ -318,7 +323,7 @@ html body .rowpagina2 .column3pagina2 h1 {
   font-size: 400%;
   font-family: "SPECTRALSC-REGULAR";
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   html body .rowpagina2 {
     flex-wrap: wrap;
   }
@@ -372,7 +377,7 @@ html body .flex-informacionsushipg3 .fotoprincipal2sushipg3 img {
   width: 50%;
   border-radius: 5%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   html body .flex-informacionsushipg3 .flex-informacionsushipg3 {
     flex-direction: column;
   }
@@ -433,7 +438,7 @@ html body .containerichisou .imageichisou img {
   height: auto;
   border-radius: 8%;
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   html body .containerichisou {
     flex-direction: column;
     text-align: center;
@@ -497,7 +502,7 @@ html body .containerosaka .imageosaka img {
   height: auto;
   border-radius: 10%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   html body .containerosaka {
     flex-direction: column;
     text-align: center;
@@ -561,7 +566,7 @@ html body .containertenkuu .imagetenkuu img {
   height: auto;
   border-radius: 8%;
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   html body .containertenkuu {
     flex-direction: column;
     text-align: center;
@@ -627,7 +632,7 @@ html body .flex-informacionpizzapg4 .fotoprincipal2pizzapg4 img {
   width: 50vw;
   border-radius: 5%;
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   html body .flex-informacionpizzapg4 .flex-informacionpizzapg4 {
     flex-wrap: wrap;
   }
@@ -697,7 +702,7 @@ html body .containerelcuartito .imagecuartito img {
   height: auto;
   border-radius: 10%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   html body .containerelcuartito {
     flex-direction: column;
     text-align: center;
@@ -763,7 +768,7 @@ html body .containerlamezzeta .imagelamezzeta img {
   height: auto;
   border-radius: 10%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   html body .containerlamezzeta {
     flex-direction: column;
     text-align: center;
@@ -827,7 +832,7 @@ html body .containerguerrin .imageguerrin img {
   height: auto;
   border-radius: 10%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   html body .containerguerrin {
     flex-direction: column;
     text-align: center;
@@ -890,7 +895,7 @@ html body .flex-informacioncarnepg5 .fotoprincipal2carnepg5 img {
   width: 40vw;
   border-radius: 5%;
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   html body .flex-informacioncarnepg5 .flex-informacioncarnepg5 {
     flex-wrap: wrap;
   }
@@ -949,7 +954,7 @@ html body .containerdonjulio .imagedonjulio img {
   height: auto;
   border-radius: 10%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   html body .containerdonjulio {
     flex-direction: column;
     text-align: center;
@@ -1016,7 +1021,7 @@ html body .containerfogonasado .imagefogonasado img {
   height: auto;
   border-radius: 10%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   html body .containerfogonasado {
     flex-direction: column;
     text-align: center;
@@ -1083,7 +1088,7 @@ html body .containerlacabrera .imagelacabrera img {
   height: auto;
   border-radius: 10%;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   html body .containerlacabrera {
     flex-direction: column;
     text-align: center;

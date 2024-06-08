@@ -3,6 +3,12 @@
     color: white;
     padding-top: 10px;
     text-align: center;
+    .arrowupcircle{
+      position: fixed;
+      bottom: 2%;
+      right: 2%;
+      width: 50px;
+    }
   
     .social-icons {
       display: flex;
@@ -31,7 +37,7 @@
         margin: 10px;
         &:hover {
           color: orange;
-          transform: scale(1.5); 
+          
         }
       }
     }

@@ -13,7 +13,6 @@
   html{
     body{
 
-   
 * {
     margin: 0;
     padding: 0;
@@ -119,7 +118,7 @@ section {
     
     
     
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
       .flex-container1pg1 {
         flex-direction: column;
       }
@@ -208,7 +207,7 @@ section {
   }
 }
 
-@media (max-width: 700px){
+@media (max-width: 768px){
   .rowpagina2{
     flex-wrap: wrap;
   }
@@ -270,7 +269,7 @@ section {
         border-radius: 5%;
       }
     } 
-    @media (max-width: 800px){
+    @media (max-width: 768px){
       .flex-informacionsushipg3{
       flex-direction: column;
       }
@@ -339,7 +338,7 @@ section {
       }
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .containerichisou {
     flex-direction: column;
     text-align: center;
@@ -408,7 +407,7 @@ section {
       }
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .containerosaka {
       flex-direction: column;
       text-align: center;
@@ -475,7 +474,7 @@ section {
       }
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .containertenkuu {
     flex-direction: column;
     text-align: center;
@@ -548,7 +547,7 @@ section {
         border-radius: 5%;
       }
     } 
-    @media (max-width: 700px){
+    @media (max-width: 768px){
       .flex-informacionpizzapg4{
       flex-wrap: wrap;
       }
@@ -623,7 +622,7 @@ hr {
       }
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .containerelcuartito {
       flex-direction: column;
       text-align: center;
@@ -691,7 +690,7 @@ hr {
       }
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .containerlamezzeta {
       flex-direction: column;
       text-align: center;
@@ -758,7 +757,7 @@ hr {
       }
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .containerguerrin {
       flex-direction: column;
       text-align: center;
@@ -827,7 +826,7 @@ hr {
         border-radius: 5%;
       }
     } 
-    @media (max-width: 700px){
+    @media (max-width: 768px){
       .flex-informacioncarnepg5{
       flex-wrap: wrap;
       }
@@ -891,7 +890,7 @@ hr {
       }
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .containerdonjulio {
       flex-direction: column;
       text-align: center;
@@ -960,7 +959,7 @@ hr {
       }
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .containerfogonasado {
       flex-direction: column;
       text-align: center;
@@ -1030,7 +1029,7 @@ hr {
       }
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .containerlacabrera {
       flex-direction: column;
       text-align: center;
